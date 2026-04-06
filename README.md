@@ -1,4 +1,4 @@
-# Algo lab implementations
+# Art Gallery Solution implementations
 
 This repository bundles two independent **Art Gallery Problem (AGP)** codebases used for coursework and experiments: a modern iterative solver based on Simon’s SoCG 2021 line of work, and a reference implementation aligned with **Tozoni’s 2016** solver and evaluation pipeline. They live in separate directories, build with different toolchains, and are orchestrated only by the optional top-level `run-all.sh` script.
 
