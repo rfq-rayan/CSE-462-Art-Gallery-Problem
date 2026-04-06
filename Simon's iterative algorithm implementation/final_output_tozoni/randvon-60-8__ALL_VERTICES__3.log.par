@@ -1,0 +1,2 @@
+idFile polSize LB UB iterations initWitnSize finalWitnSize initCandSize finalCandSize maxHorizontal IPSolved initDisTime insertDisTime selectCandTime initSolverTime solverTime scpResolTime newDisTime totalTime
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/instances/final/randvon-60-8.pol 60 5 6 1 60 60 208 208 5 5 2.7e-05 0.032619 0.043074 0.018065 0.021438 0.002153 0.000309 0.115636

@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Wpedantic -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/agp_solver.dir/link.d CMakeFiles/agp_solver.dir/src/main.cpp.o -o agp_solver  libagp_lib.a /usr/lib64/libgmpxx.so /lib64/libmpfr.so /lib64/libgmp.so /usr/lib64/libglpk.so

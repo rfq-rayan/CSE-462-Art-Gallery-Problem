@@ -1,0 +1,5 @@
+if(EXISTS "/run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_tests[1]_tests.cmake")
+  include("/run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_tests[1]_tests.cmake")
+else()
+  add_test(agp_tests_NOT_BUILT agp_tests_NOT_BUILT)
+endif()

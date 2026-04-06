@@ -1,0 +1,1956 @@
+2026-04-06 06:44:05,275 [INFO] Batch start: solver=/run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver input_dir=/run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json output_dir=/run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output
+2026-04-06 06:44:05,275 [INFO] --- instance gB_simple-simple_25:100v-10h_29 ---
+2026-04-06 06:44:05,275 [INFO] command: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json/gB_simple-simple_25:100v-10h_29.json --output /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/gB_simple-simple_25:100v-10h_29_output.json --verbosity 1
+2026-04-06 06:44:38,655 [INFO] solver stdout:
+Loaded polygon with 25 vertices
+Mode: iterative (paper's main algorithm)
+GLPK Integer Optimizer 5.0
+61 rows, 162 columns, 1392 non-zeros
+162 integer variables, all of which are binary
+Preprocessing...
+60 rows, 70 columns, 1391 non-zeros
+70 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 60
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+60 rows, 70 columns, 1391 non-zeros
+      0: obj =   6.134969325e-03 inf =   6.000e+01 (60)
+      4: obj =   4.006134969e+00 inf =   0.000e+00 (0)
+*    20: obj =   3.006134969e+00 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    20: mip =     not found yet >=              -inf        (1; 0)
++    20: >>>>>   3.006134969e+00 >=   3.006134969e+00   0.0% (1; 0)
++    20: mip =   3.006134969e+00 >=     tree is empty   0.0% (0; 1)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+71 rows, 162 columns, 1407 non-zeros
+162 integer variables, all of which are binary
+Preprocessing...
+61 rows, 71 columns, 1397 non-zeros
+71 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 61
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+61 rows, 71 columns, 1397 non-zeros
+      0: obj =   6.134969325e-02 inf =   6.100e+01 (61)
+      4: obj =   4.061349693e+00 inf =   0.000e+00 (0)
+*    24: obj =   3.067484663e+00 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    24: mip =     not found yet >=              -inf        (1; 0)
++    24: >>>>>   3.067484663e+00 >=   3.067484663e+00   0.0% (1; 0)
++    24: mip =   3.067484663e+00 >=     tree is empty   0.0% (0; 1)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+81 rows, 162 columns, 1456 non-zeros
+162 integer variables, all of which are binary
+Preprocessing...
+64 rows, 74 columns, 1439 non-zeros
+74 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 64
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+64 rows, 74 columns, 1439 non-zeros
+      0: obj =   1.042944785e-01 inf =   6.400e+01 (64)
+      5: obj =   5.104294479e+00 inf =   0.000e+00 (0)
+*    35: obj =   3.128834356e+00 inf =   4.004e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    35: mip =     not found yet >=              -inf        (1; 0)
++    35: >>>>>   3.128834356e+00 >=   3.128834356e+00   0.0% (1; 0)
++    35: mip =   3.128834356e+00 >=     tree is empty   0.0% (0; 1)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+91 rows, 162 columns, 1466 non-zeros
+162 integer variables, all of which are binary
+Preprocessing...
+64 rows, 74 columns, 1439 non-zeros
+74 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 64
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+64 rows, 74 columns, 1439 non-zeros
+      0: obj =   1.656441718e-01 inf =   6.400e+01 (64)
+      5: obj =   5.165644172e+00 inf =   0.000e+00 (0)
+*    35: obj =   3.190184049e+00 inf =   4.004e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    35: mip =     not found yet >=              -inf        (1; 0)
++    35: >>>>>   3.190184049e+00 >=   3.190184049e+00   0.0% (1; 0)
++    35: mip =   3.190184049e+00 >=     tree is empty   0.0% (0; 1)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+99 rows, 162 columns, 1474 non-zeros
+162 integer variables, all of which are binary
+Preprocessing...
+64 rows, 74 columns, 1439 non-zeros
+74 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 64
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+64 rows, 74 columns, 1439 non-zeros
+      0: obj =   2.147239264e-01 inf =   6.400e+01 (64)
+      5: obj =   5.214723926e+00 inf =   0.000e+00 (0)
+*    35: obj =   3.239263804e+00 inf =   4.004e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    35: mip =     not found yet >=              -inf        (1; 0)
++    35: >>>>>   3.239263804e+00 >=   3.239263804e+00   0.0% (1; 0)
++    35: mip =   3.239263804e+00 >=     tree is empty   0.0% (0; 1)
+INTEGER OPTIMAL SOLUTION FOUND
+
+=== Solution ===
+Status: Optimal
+Number of guards: 3
+Iterations: 1
+Total time: 33.376 seconds
+
+Arrangement statistics:
+  Final candidates: 116
+  Final witnesses: 116
+  Granularity: 2^-4
+  Granularity updates: 0
+
+Solution written to: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/gB_simple-simple_25:100v-10h_29_output.json
+2026-04-06 06:44:38,655 [INFO] solver stderr:
+[GLPK] Return code: 0
+[GLPK] Variables: 162
+[GLPK] Constraints: 61
+[GLPK] Constraint 0 has 22 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 26 variables, lb=1
+[GLPK] Constraint 3 has 20 variables, lb=1
+[GLPK] Constraint 4 has 23 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 162
+[GLPK] Constraints: 71
+[GLPK] Constraint 0 has 22 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 26 variables, lb=1
+[GLPK] Constraint 3 has 20 variables, lb=1
+[GLPK] Constraint 4 has 23 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 162
+[GLPK] Constraints: 81
+[GLPK] Constraint 0 has 22 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 26 variables, lb=1
+[GLPK] Constraint 3 has 20 variables, lb=1
+[GLPK] Constraint 4 has 23 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 162
+[GLPK] Constraints: 91
+[GLPK] Constraint 0 has 22 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 26 variables, lb=1
+[GLPK] Constraint 3 has 20 variables, lb=1
+[GLPK] Constraint 4 has 23 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 162
+[GLPK] Constraints: 99
+[GLPK] Constraint 0 has 22 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 26 variables, lb=1
+[GLPK] Constraint 3 has 20 variables, lb=1
+[GLPK] Constraint 4 has 23 variables, lb=1
+[GLPK] MIP status: 5
+2026-04-06 06:44:38,655 [INFO] instance gB_simple-simple_25:100v-10h_29 finished: wall_clock_s=33.379306 returncode=0
+2026-04-06 06:44:38,655 [INFO] gB_simple-simple_25:100v-10h_29: wall=33.379s return=0
+2026-04-06 06:44:38,655 [INFO] --- instance gD_ortho-ortho_20:100v-10h_23 ---
+2026-04-06 06:44:38,655 [INFO] command: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json/gD_ortho-ortho_20:100v-10h_23.json --output /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/gD_ortho-ortho_20:100v-10h_23_output.json --verbosity 1
+2026-04-06 06:44:40,237 [INFO] solver stdout:
+Loaded polygon with 20 vertices
+Mode: iterative (paper's main algorithm)
+GLPK Integer Optimizer 5.0
+23 rows, 25 columns, 261 non-zeros
+25 integer variables, all of which are binary
+Preprocessing...
+21 rows, 22 columns, 259 non-zeros
+22 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 21
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+21 rows, 22 columns, 259 non-zeros
+      0: obj =   7.692307692e-02 inf =   2.100e+01 (21)
+      3: obj =   3.115384615e+00 inf =   0.000e+00 (0)
+*    11: obj =   2.076923077e+00 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    11: mip =     not found yet >=              -inf        (1; 0)
++    11: >>>>>   2.076923077e+00 >=   2.076923077e+00   0.0% (1; 0)
++    11: mip =   2.076923077e+00 >=     tree is empty   0.0% (0; 1)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+23 rows, 25 columns, 261 non-zeros
+25 integer variables, all of which are binary
+Preprocessing...
+21 rows, 22 columns, 259 non-zeros
+22 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 21
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+21 rows, 22 columns, 259 non-zeros
+      0: obj =   7.692307692e-02 inf =   2.100e+01 (21)
+      3: obj =   3.115384615e+00 inf =   0.000e+00 (0)
+*    11: obj =   2.076923077e+00 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    11: mip =     not found yet >=              -inf        (1; 0)
++    11: >>>>>   2.076923077e+00 >=   2.076923077e+00   0.0% (1; 0)
++    11: mip =   2.076923077e+00 >=     tree is empty   0.0% (0; 1)
+INTEGER OPTIMAL SOLUTION FOUND
+
+=== Solution ===
+Status: Optimal
+Number of guards: 2
+Iterations: 1
+Total time: 1.579 seconds
+
+Arrangement statistics:
+  Final candidates: 23
+  Final witnesses: 23
+  Granularity: 2^-4
+  Granularity updates: 0
+
+Solution written to: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/gD_ortho-ortho_20:100v-10h_23_output.json
+2026-04-06 06:44:40,237 [INFO] solver stderr:
+[GLPK] Return code: 0
+[GLPK] Variables: 25
+[GLPK] Constraints: 23
+[GLPK] Constraint 0 has 9 variables, lb=1
+[GLPK] Constraint 1 has 9 variables, lb=1
+[GLPK] Constraint 2 has 16 variables, lb=1
+[GLPK] Constraint 3 has 14 variables, lb=1
+[GLPK] Constraint 4 has 17 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 25
+[GLPK] Constraints: 23
+[GLPK] Constraint 0 has 9 variables, lb=1
+[GLPK] Constraint 1 has 9 variables, lb=1
+[GLPK] Constraint 2 has 16 variables, lb=1
+[GLPK] Constraint 3 has 14 variables, lb=1
+[GLPK] Constraint 4 has 17 variables, lb=1
+[GLPK] MIP status: 5
+2026-04-06 06:44:40,237 [INFO] instance gD_ortho-ortho_20:100v-10h_23 finished: wall_clock_s=1.581611 returncode=0
+2026-04-06 06:44:40,237 [INFO] gD_ortho-ortho_20:100v-10h_23: wall=1.582s return=0
+2026-04-06 06:44:40,237 [INFO] --- instance random-100-6 ---
+2026-04-06 06:44:40,238 [INFO] command: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json/random-100-6.json --output /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/random-100-6_output.json --verbosity 1
+2026-04-06 06:49:08,193 [INFO] Batch start: solver=/run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver input_dir=/run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json output_dir=/run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output
+2026-04-06 06:49:08,193 [INFO] --- instance gB_simple-simple_25:100v-10h_29 ---
+2026-04-06 06:49:08,194 [INFO] command: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json/gB_simple-simple_25:100v-10h_29.json --output /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/gB_simple-simple_25:100v-10h_29_output.json --verbosity 1
+2026-04-06 06:49:42,901 [INFO] solver stdout:
+Loaded polygon with 25 vertices
+Mode: iterative (paper's main algorithm)
+GLPK Integer Optimizer 5.0
+61 rows, 162 columns, 1392 non-zeros
+162 integer variables, all of which are binary
+Preprocessing...
+60 rows, 70 columns, 1391 non-zeros
+70 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 60
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+60 rows, 70 columns, 1391 non-zeros
+      0: obj =   6.134969325e-03 inf =   6.000e+01 (60)
+      4: obj =   4.006134969e+00 inf =   0.000e+00 (0)
+*    20: obj =   3.006134969e+00 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    20: mip =     not found yet >=              -inf        (1; 0)
++    20: >>>>>   3.006134969e+00 >=   3.006134969e+00   0.0% (1; 0)
++    20: mip =   3.006134969e+00 >=     tree is empty   0.0% (0; 1)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+71 rows, 162 columns, 1407 non-zeros
+162 integer variables, all of which are binary
+Preprocessing...
+61 rows, 71 columns, 1397 non-zeros
+71 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 61
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+61 rows, 71 columns, 1397 non-zeros
+      0: obj =   6.134969325e-02 inf =   6.100e+01 (61)
+      4: obj =   4.061349693e+00 inf =   0.000e+00 (0)
+*    24: obj =   3.067484663e+00 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    24: mip =     not found yet >=              -inf        (1; 0)
++    24: >>>>>   3.067484663e+00 >=   3.067484663e+00   0.0% (1; 0)
++    24: mip =   3.067484663e+00 >=     tree is empty   0.0% (0; 1)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+81 rows, 162 columns, 1456 non-zeros
+162 integer variables, all of which are binary
+Preprocessing...
+64 rows, 74 columns, 1439 non-zeros
+74 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 64
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+64 rows, 74 columns, 1439 non-zeros
+      0: obj =   1.042944785e-01 inf =   6.400e+01 (64)
+      5: obj =   5.104294479e+00 inf =   0.000e+00 (0)
+*    35: obj =   3.128834356e+00 inf =   4.004e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    35: mip =     not found yet >=              -inf        (1; 0)
++    35: >>>>>   3.128834356e+00 >=   3.128834356e+00   0.0% (1; 0)
++    35: mip =   3.128834356e+00 >=     tree is empty   0.0% (0; 1)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+91 rows, 162 columns, 1466 non-zeros
+162 integer variables, all of which are binary
+Preprocessing...
+64 rows, 74 columns, 1439 non-zeros
+74 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 64
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+64 rows, 74 columns, 1439 non-zeros
+      0: obj =   1.656441718e-01 inf =   6.400e+01 (64)
+      5: obj =   5.165644172e+00 inf =   0.000e+00 (0)
+*    35: obj =   3.190184049e+00 inf =   4.004e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    35: mip =     not found yet >=              -inf        (1; 0)
++    35: >>>>>   3.190184049e+00 >=   3.190184049e+00   0.0% (1; 0)
++    35: mip =   3.190184049e+00 >=     tree is empty   0.0% (0; 1)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+99 rows, 162 columns, 1474 non-zeros
+162 integer variables, all of which are binary
+Preprocessing...
+64 rows, 74 columns, 1439 non-zeros
+74 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 64
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+64 rows, 74 columns, 1439 non-zeros
+      0: obj =   2.147239264e-01 inf =   6.400e+01 (64)
+      5: obj =   5.214723926e+00 inf =   0.000e+00 (0)
+*    35: obj =   3.239263804e+00 inf =   4.004e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    35: mip =     not found yet >=              -inf        (1; 0)
++    35: >>>>>   3.239263804e+00 >=   3.239263804e+00   0.0% (1; 0)
++    35: mip =   3.239263804e+00 >=     tree is empty   0.0% (0; 1)
+INTEGER OPTIMAL SOLUTION FOUND
+
+=== Solution ===
+Status: Optimal
+Number of guards: 3
+Iterations: 1
+Total time: 34.704 seconds
+
+Arrangement statistics:
+  Final candidates: 116
+  Final witnesses: 116
+  Granularity: 2^-4
+  Granularity updates: 0
+
+Solution written to: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/gB_simple-simple_25:100v-10h_29_output.json
+2026-04-06 06:49:42,901 [INFO] solver stderr:
+[GLPK] Return code: 0
+[GLPK] Variables: 162
+[GLPK] Constraints: 61
+[GLPK] Constraint 0 has 22 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 26 variables, lb=1
+[GLPK] Constraint 3 has 20 variables, lb=1
+[GLPK] Constraint 4 has 23 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 162
+[GLPK] Constraints: 71
+[GLPK] Constraint 0 has 22 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 26 variables, lb=1
+[GLPK] Constraint 3 has 20 variables, lb=1
+[GLPK] Constraint 4 has 23 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 162
+[GLPK] Constraints: 81
+[GLPK] Constraint 0 has 22 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 26 variables, lb=1
+[GLPK] Constraint 3 has 20 variables, lb=1
+[GLPK] Constraint 4 has 23 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 162
+[GLPK] Constraints: 91
+[GLPK] Constraint 0 has 22 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 26 variables, lb=1
+[GLPK] Constraint 3 has 20 variables, lb=1
+[GLPK] Constraint 4 has 23 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 162
+[GLPK] Constraints: 99
+[GLPK] Constraint 0 has 22 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 26 variables, lb=1
+[GLPK] Constraint 3 has 20 variables, lb=1
+[GLPK] Constraint 4 has 23 variables, lb=1
+[GLPK] MIP status: 5
+2026-04-06 06:49:42,901 [INFO] instance gB_simple-simple_25:100v-10h_29 finished: wall_clock_s=34.707357 returncode=0
+2026-04-06 06:49:42,901 [INFO] gB_simple-simple_25:100v-10h_29: wall=34.707s return=0
+2026-04-06 06:49:42,902 [INFO] --- instance random-100-6 ---
+2026-04-06 06:49:42,902 [INFO] command: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json/random-100-6.json --output /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/random-100-6_output.json --verbosity 1
+2026-04-06 06:51:44,045 [INFO] Batch start: solver=/run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver input_dir=/run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json output_dir=/run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output resume=True
+2026-04-06 06:51:44,045 [INFO] resume skip (already complete): gB_simple-simple_25:100v-10h_29
+2026-04-06 06:51:44,045 [INFO] --- instance random-100-6 ---
+2026-04-06 06:51:44,045 [INFO] command: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json/random-100-6.json --output /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/random-100-6_output.json --verbosity 1
+2026-04-06 06:51:58,924 [INFO] Batch start: solver=/run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver input_dir=/run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json output_dir=/run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output resume=True
+2026-04-06 06:51:58,925 [INFO] resume skip (already complete): gB_simple-simple_25:100v-10h_29
+2026-04-06 06:51:58,925 [INFO] --- instance random-20-8 ---
+2026-04-06 06:51:58,925 [INFO] command: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json/random-20-8.json --output /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/random-20-8_output.json --verbosity 1
+2026-04-06 06:52:04,038 [INFO] solver stdout:
+Loaded polygon with 20 vertices
+Mode: iterative (paper's main algorithm)
+GLPK Integer Optimizer 5.0
+23 rows, 28 columns, 256 non-zeros
+28 integer variables, all of which are binary
+Preprocessing...
+23 rows, 25 columns, 256 non-zeros
+25 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 23
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+23 rows, 25 columns, 256 non-zeros
+      0: obj =   0.000000000e+00 inf =   2.300e+01 (23)
+      4: obj =   4.000000000e+00 inf =   0.000e+00 (0)
+*    11: obj =   2.500000000e+00 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    11: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 4
++    17: >>>>>   3.000000000e+00 >=   2.517241379e+00  16.1% (4; 0)
++    22: mip =   3.000000000e+00 >=     tree is empty   0.0% (0; 7)
+INTEGER OPTIMAL SOLUTION FOUND
+
+=== Solution ===
+Status: Optimal
+Number of guards: 3
+Iterations: 1
+Total time: 5.111 seconds
+
+Arrangement statistics:
+  Final candidates: 25
+  Final witnesses: 25
+  Granularity: 2^-4
+  Granularity updates: 0
+
+Solution written to: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/random-20-8_output.json
+2026-04-06 06:52:04,039 [INFO] solver stderr:
+[GLPK] Return code: 0
+[GLPK] Variables: 28
+[GLPK] Constraints: 23
+[GLPK] Constraint 0 has 12 variables, lb=1
+[GLPK] Constraint 1 has 12 variables, lb=1
+[GLPK] Constraint 2 has 16 variables, lb=1
+[GLPK] Constraint 3 has 12 variables, lb=1
+[GLPK] Constraint 4 has 13 variables, lb=1
+[GLPK] MIP status: 5
+2026-04-06 06:52:04,039 [INFO] instance random-20-8 finished: wall_clock_s=5.113663 returncode=0
+2026-04-06 06:52:04,039 [INFO] random-20-8: wall=5.114s return=0
+2026-04-06 06:52:04,039 [INFO] --- instance random-40-14 ---
+2026-04-06 06:52:04,039 [INFO] command: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json/random-40-14.json --output /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/random-40-14_output.json --verbosity 1
+2026-04-06 06:52:40,705 [INFO] solver stdout:
+Loaded polygon with 40 vertices
+Mode: iterative (paper's main algorithm)
+GLPK Integer Optimizer 5.0
+61 rows, 75 columns, 793 non-zeros
+75 integer variables, all of which are binary
+Preprocessing...
+49 rows, 50 columns, 781 non-zeros
+50 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 49
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+49 rows, 50 columns, 781 non-zeros
+      0: obj =   1.578947368e-01 inf =   4.900e+01 (49)
+      5: obj =   5.157894737e+00 inf =   0.000e+00 (0)
+*    21: obj =   4.157894737e+00 inf =   1.665e-17 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    21: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 7.15789473684
+Solution found by heuristic: 6.15789473684
++    28: >>>>>   4.157894737e+00 >=   4.157894737e+00   0.0% (3; 0)
++    28: mip =   4.157894737e+00 >=     tree is empty   0.0% (0; 5)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+59 rows, 75 columns, 791 non-zeros
+75 integer variables, all of which are binary
+Preprocessing...
+49 rows, 50 columns, 781 non-zeros
+50 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 49
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+49 rows, 50 columns, 781 non-zeros
+      0: obj =   1.315789474e-01 inf =   4.900e+01 (49)
+      5: obj =   5.131578947e+00 inf =   0.000e+00 (0)
+*    21: obj =   4.131578947e+00 inf =   1.665e-17 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    21: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 7.13157894737
+Solution found by heuristic: 6.13157894737
++    28: >>>>>   4.131578947e+00 >=   4.131578947e+00   0.0% (3; 0)
++    28: mip =   4.131578947e+00 >=     tree is empty   0.0% (0; 5)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+61 rows, 75 columns, 793 non-zeros
+75 integer variables, all of which are binary
+Preprocessing...
+49 rows, 50 columns, 781 non-zeros
+50 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 49
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+49 rows, 50 columns, 781 non-zeros
+      0: obj =   1.578947368e-01 inf =   4.900e+01 (49)
+      5: obj =   5.157894737e+00 inf =   0.000e+00 (0)
+*    21: obj =   4.157894737e+00 inf =   1.665e-17 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    21: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 7.15789473684
+Solution found by heuristic: 6.15789473684
++    28: >>>>>   4.157894737e+00 >=   4.157894737e+00   0.0% (3; 0)
++    28: mip =   4.157894737e+00 >=     tree is empty   0.0% (0; 5)
+INTEGER OPTIMAL SOLUTION FOUND
+
+=== Solution ===
+Status: Optimal
+Number of guards: 4
+Iterations: 1
+Total time: 36.664 seconds
+
+Arrangement statistics:
+  Final candidates: 63
+  Final witnesses: 63
+  Granularity: 2^-4
+  Granularity updates: 0
+
+Solution written to: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/random-40-14_output.json
+2026-04-06 06:52:40,705 [INFO] solver stderr:
+[GLPK] Return code: 0
+[GLPK] Variables: 75
+[GLPK] Constraints: 61
+[GLPK] Constraint 0 has 13 variables, lb=1
+[GLPK] Constraint 1 has 18 variables, lb=1
+[GLPK] Constraint 2 has 8 variables, lb=1
+[GLPK] Constraint 3 has 8 variables, lb=1
+[GLPK] Constraint 4 has 13 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 75
+[GLPK] Constraints: 59
+[GLPK] Constraint 0 has 13 variables, lb=1
+[GLPK] Constraint 1 has 18 variables, lb=1
+[GLPK] Constraint 2 has 8 variables, lb=1
+[GLPK] Constraint 3 has 8 variables, lb=1
+[GLPK] Constraint 4 has 13 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 75
+[GLPK] Constraints: 61
+[GLPK] Constraint 0 has 13 variables, lb=1
+[GLPK] Constraint 1 has 18 variables, lb=1
+[GLPK] Constraint 2 has 8 variables, lb=1
+[GLPK] Constraint 3 has 8 variables, lb=1
+[GLPK] Constraint 4 has 13 variables, lb=1
+[GLPK] MIP status: 5
+2026-04-06 06:52:40,705 [INFO] instance random-40-14 finished: wall_clock_s=36.666160 returncode=0
+2026-04-06 06:52:40,706 [INFO] random-40-14: wall=36.666s return=0
+2026-04-06 06:52:40,706 [INFO] --- instance random-60-2 ---
+2026-04-06 06:52:40,706 [INFO] command: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json/random-60-2.json --output /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/random-60-2_output.json --verbosity 1
+2026-04-06 06:54:48,784 [INFO] solver stdout:
+Loaded polygon with 60 vertices
+Mode: iterative (paper's main algorithm)
+GLPK Integer Optimizer 5.0
+79 rows, 152 columns, 1427 non-zeros
+152 integer variables, all of which are binary
+Preprocessing...
+78 rows, 78 columns, 1426 non-zeros
+78 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 78
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+78 rows, 78 columns, 1426 non-zeros
+      0: obj =   6.535947712e-03 inf =   7.800e+01 (78)
+      8: obj =   8.006535948e+00 inf =   0.000e+00 (0)
+*    58: obj =   5.784313725e+00 inf =   7.216e-16 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    58: mip =     not found yet >=              -inf        (1; 0)
++    66: >>>>>   6.006535948e+00 >=   6.006535948e+00 < 0.1% (4; 0)
++    66: mip =   6.006535948e+00 >=     tree is empty   0.0% (0; 7)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+89 rows, 152 columns, 1437 non-zeros
+152 integer variables, all of which are binary
+Preprocessing...
+78 rows, 78 columns, 1426 non-zeros
+78 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 78
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+78 rows, 78 columns, 1426 non-zeros
+      0: obj =   7.189542484e-02 inf =   7.800e+01 (78)
+      8: obj =   8.071895425e+00 inf =   0.000e+00 (0)
+*    58: obj =   5.849673203e+00 inf =   7.216e-16 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    58: mip =     not found yet >=              -inf        (1; 0)
++    66: >>>>>   6.071895425e+00 >=   6.071895425e+00   0.0% (4; 0)
++    66: mip =   6.071895425e+00 >=     tree is empty   0.0% (0; 7)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+99 rows, 152 columns, 1447 non-zeros
+152 integer variables, all of which are binary
+Preprocessing...
+78 rows, 78 columns, 1426 non-zeros
+78 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 78
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+78 rows, 78 columns, 1426 non-zeros
+      0: obj =   1.372549020e-01 inf =   7.800e+01 (78)
+      8: obj =   8.137254902e+00 inf =   0.000e+00 (0)
+*    58: obj =   5.915032680e+00 inf =   7.216e-16 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    58: mip =     not found yet >=              -inf        (1; 0)
++    66: >>>>>   6.137254902e+00 >=   6.137254902e+00 < 0.1% (4; 0)
++    66: mip =   6.137254902e+00 >=     tree is empty   0.0% (0; 7)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+109 rows, 152 columns, 1457 non-zeros
+152 integer variables, all of which are binary
+Preprocessing...
+78 rows, 78 columns, 1426 non-zeros
+78 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 78
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+78 rows, 78 columns, 1426 non-zeros
+      0: obj =   2.026143791e-01 inf =   7.800e+01 (78)
+      8: obj =   8.202614379e+00 inf =   0.000e+00 (0)
+*    58: obj =   5.980392157e+00 inf =   7.216e-16 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    58: mip =     not found yet >=              -inf        (1; 0)
++    66: >>>>>   6.202614379e+00 >=   6.202614379e+00 < 0.1% (4; 0)
++    66: mip =   6.202614379e+00 >=     tree is empty   0.0% (0; 7)
+INTEGER OPTIMAL SOLUTION FOUND
+
+=== Solution ===
+Status: Optimal
+Number of guards: 6
+Iterations: 1
+Total time: 128.075 seconds
+
+Arrangement statistics:
+  Final candidates: 121
+  Final witnesses: 121
+  Granularity: 2^-4
+  Granularity updates: 0
+
+Solution written to: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/random-60-2_output.json
+2026-04-06 06:54:48,784 [INFO] solver stderr:
+[GLPK] Return code: 0
+[GLPK] Variables: 152
+[GLPK] Constraints: 79
+[GLPK] Constraint 0 has 15 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 11 variables, lb=1
+[GLPK] Constraint 3 has 10 variables, lb=1
+[GLPK] Constraint 4 has 10 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 152
+[GLPK] Constraints: 89
+[GLPK] Constraint 0 has 15 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 11 variables, lb=1
+[GLPK] Constraint 3 has 10 variables, lb=1
+[GLPK] Constraint 4 has 10 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 152
+[GLPK] Constraints: 99
+[GLPK] Constraint 0 has 15 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 11 variables, lb=1
+[GLPK] Constraint 3 has 10 variables, lb=1
+[GLPK] Constraint 4 has 10 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 152
+[GLPK] Constraints: 109
+[GLPK] Constraint 0 has 15 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 11 variables, lb=1
+[GLPK] Constraint 3 has 10 variables, lb=1
+[GLPK] Constraint 4 has 10 variables, lb=1
+[GLPK] MIP status: 5
+2026-04-06 06:54:48,784 [INFO] instance random-60-2 finished: wall_clock_s=128.077907 returncode=0
+2026-04-06 06:54:48,784 [INFO] random-60-2: wall=128.078s return=0
+2026-04-06 06:54:48,784 [INFO] --- instance random-80-23 ---
+2026-04-06 06:54:48,784 [INFO] command: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json/random-80-23.json --output /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/random-80-23_output.json --verbosity 1
+2026-04-06 06:59:54,155 [INFO] solver stdout:
+Loaded polygon with 80 vertices
+Mode: iterative (paper's main algorithm)
+GLPK Integer Optimizer 5.0
+179 rows, 265 columns, 2386 non-zeros
+265 integer variables, all of which are binary
+Preprocessing...
+117 rows, 118 columns, 2324 non-zeros
+118 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 117
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+117 rows, 118 columns, 2324 non-zeros
+      0: obj =   2.330827068e-01 inf =   1.170e+02 (117)
+     10: obj =   1.023308271e+01 inf =   0.000e+00 (0)
+*    91: obj =   6.940342660e+00 inf =   3.095e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    91: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 12.2330827068
++   381: >>>>>   1.123308271e+01 >=   7.081358569e+00  37.0% (37; 0)
++   671: >>>>>   9.233082707e+00 >=   7.121971596e+00  22.9% (48; 3)
++  1520: >>>>>   8.233082707e+00 >=   7.233082707e+00  12.1% (76; 54)
++  2719: mip =   8.233082707e+00 >=     tree is empty   0.0% (0; 245)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+127 rows, 265 columns, 2334 non-zeros
+265 integer variables, all of which are binary
+Preprocessing...
+117 rows, 118 columns, 2324 non-zeros
+118 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 117
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+117 rows, 118 columns, 2324 non-zeros
+      0: obj =   3.759398496e-02 inf =   1.170e+02 (117)
+     10: obj =   1.003759398e+01 inf =   0.000e+00 (0)
+*    91: obj =   6.744853938e+00 inf =   3.095e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    91: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 12.037593985
++   381: >>>>>   1.103759398e+01 >=   6.885869847e+00  37.6% (37; 0)
++   671: >>>>>   9.037593985e+00 >=   6.926482874e+00  23.4% (48; 3)
++  1520: >>>>>   8.037593985e+00 >=   7.037593985e+00  12.4% (76; 54)
+Solution found by heuristic: 8.03759398496
++  2732: mip =   8.037593985e+00 >=     tree is empty   0.0% (0; 245)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+137 rows, 265 columns, 2344 non-zeros
+265 integer variables, all of which are binary
+Preprocessing...
+117 rows, 118 columns, 2324 non-zeros
+118 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 117
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+117 rows, 118 columns, 2324 non-zeros
+      0: obj =   7.518796992e-02 inf =   1.170e+02 (117)
+     10: obj =   1.007518797e+01 inf =   0.000e+00 (0)
+*    91: obj =   6.782447923e+00 inf =   3.095e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    91: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 12.0751879699
++   381: >>>>>   1.107518797e+01 >=   6.923463832e+00  37.5% (37; 0)
++   671: >>>>>   9.075187970e+00 >=   6.964076859e+00  23.3% (48; 3)
++  1520: >>>>>   8.075187970e+00 >=   7.075187970e+00  12.4% (76; 54)
+Solution found by heuristic: 8.07518796992
++  2726: mip =   8.075187970e+00 >=     tree is empty   0.0% (0; 245)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+147 rows, 265 columns, 2354 non-zeros
+265 integer variables, all of which are binary
+Preprocessing...
+117 rows, 118 columns, 2324 non-zeros
+118 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 117
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+117 rows, 118 columns, 2324 non-zeros
+      0: obj =   1.127819549e-01 inf =   1.170e+02 (117)
+     10: obj =   1.011278195e+01 inf =   0.000e+00 (0)
+*    91: obj =   6.820041908e+00 inf =   3.095e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    91: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 12.1127819549
++   381: >>>>>   1.111278195e+01 >=   6.961057817e+00  37.4% (37; 0)
++   671: >>>>>   9.112781955e+00 >=   7.001670844e+00  23.2% (48; 3)
++  1520: >>>>>   8.112781955e+00 >=   7.112781955e+00  12.3% (76; 54)
+Solution found by heuristic: 8.11278195489
++  2726: mip =   8.112781955e+00 >=     tree is empty   0.0% (0; 245)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+157 rows, 265 columns, 2364 non-zeros
+265 integer variables, all of which are binary
+Preprocessing...
+117 rows, 118 columns, 2324 non-zeros
+118 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 117
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+117 rows, 118 columns, 2324 non-zeros
+      0: obj =   1.503759398e-01 inf =   1.170e+02 (117)
+     10: obj =   1.015037594e+01 inf =   0.000e+00 (0)
+*    91: obj =   6.857635893e+00 inf =   3.095e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    91: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 12.1503759398
++   381: >>>>>   1.115037594e+01 >=   6.998651802e+00  37.2% (37; 0)
++   671: >>>>>   9.150375940e+00 >=   7.039264829e+00  23.1% (48; 3)
++  1520: >>>>>   8.150375940e+00 >=   7.150375940e+00  12.3% (76; 54)
+Solution found by heuristic: 8.15037593985
++  2726: mip =   8.150375940e+00 >=     tree is empty   0.0% (0; 245)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+167 rows, 265 columns, 2374 non-zeros
+265 integer variables, all of which are binary
+Preprocessing...
+117 rows, 118 columns, 2324 non-zeros
+118 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 117
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+117 rows, 118 columns, 2324 non-zeros
+      0: obj =   1.879699248e-01 inf =   1.170e+02 (117)
+     10: obj =   1.018796992e+01 inf =   0.000e+00 (0)
+*    91: obj =   6.895229878e+00 inf =   3.095e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    91: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 12.1879699248
++   381: >>>>>   1.118796992e+01 >=   7.036245787e+00  37.1% (37; 0)
++   671: >>>>>   9.187969925e+00 >=   7.076858814e+00  23.0% (48; 3)
++  1520: >>>>>   8.187969925e+00 >=   7.187969925e+00  12.2% (76; 54)
+Solution found by heuristic: 8.18796992481
++  2726: mip =   8.187969925e+00 >=     tree is empty   0.0% (0; 245)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+177 rows, 265 columns, 2384 non-zeros
+265 integer variables, all of which are binary
+Preprocessing...
+117 rows, 118 columns, 2324 non-zeros
+118 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 117
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+117 rows, 118 columns, 2324 non-zeros
+      0: obj =   2.255639098e-01 inf =   1.170e+02 (117)
+     10: obj =   1.022556391e+01 inf =   0.000e+00 (0)
+*    91: obj =   6.932823863e+00 inf =   3.095e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    91: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 12.2255639098
++   381: >>>>>   1.122556391e+01 >=   7.073839772e+00  37.0% (37; 0)
++   671: >>>>>   9.225563910e+00 >=   7.114452799e+00  22.9% (48; 3)
++  1520: >>>>>   8.225563910e+00 >=   7.225563910e+00  12.2% (76; 54)
+Solution found by heuristic: 8.22556390977
++  2731: mip =   8.225563910e+00 >=     tree is empty   0.0% (0; 245)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+179 rows, 265 columns, 2386 non-zeros
+265 integer variables, all of which are binary
+Preprocessing...
+117 rows, 118 columns, 2324 non-zeros
+118 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 117
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+117 rows, 118 columns, 2324 non-zeros
+      0: obj =   2.330827068e-01 inf =   1.170e+02 (117)
+     10: obj =   1.023308271e+01 inf =   0.000e+00 (0)
+*    91: obj =   6.940342660e+00 inf =   3.095e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    91: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 12.2330827068
++   381: >>>>>   1.123308271e+01 >=   7.081358569e+00  37.0% (37; 0)
++   671: >>>>>   9.233082707e+00 >=   7.121971596e+00  22.9% (48; 3)
++  1520: >>>>>   8.233082707e+00 >=   7.233082707e+00  12.1% (76; 54)
++  2719: mip =   8.233082707e+00 >=     tree is empty   0.0% (0; 245)
+INTEGER OPTIMAL SOLUTION FOUND
+
+=== Solution ===
+Status: Optimal
+Number of guards: 8
+Iterations: 1
+Total time: 305.368 seconds
+
+Arrangement statistics:
+  Final candidates: 203
+  Final witnesses: 203
+  Granularity: 2^-4
+  Granularity updates: 0
+
+Solution written to: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/random-80-23_output.json
+2026-04-06 06:59:54,155 [INFO] solver stderr:
+[GLPK] Return code: 0
+[GLPK] Variables: 265
+[GLPK] Constraints: 179
+[GLPK] Constraint 0 has 14 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 11 variables, lb=1
+[GLPK] Constraint 3 has 17 variables, lb=1
+[GLPK] Constraint 4 has 22 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 265
+[GLPK] Constraints: 127
+[GLPK] Constraint 0 has 14 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 11 variables, lb=1
+[GLPK] Constraint 3 has 17 variables, lb=1
+[GLPK] Constraint 4 has 22 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 265
+[GLPK] Constraints: 137
+[GLPK] Constraint 0 has 14 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 11 variables, lb=1
+[GLPK] Constraint 3 has 17 variables, lb=1
+[GLPK] Constraint 4 has 22 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 265
+[GLPK] Constraints: 147
+[GLPK] Constraint 0 has 14 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 11 variables, lb=1
+[GLPK] Constraint 3 has 17 variables, lb=1
+[GLPK] Constraint 4 has 22 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 265
+[GLPK] Constraints: 157
+[GLPK] Constraint 0 has 14 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 11 variables, lb=1
+[GLPK] Constraint 3 has 17 variables, lb=1
+[GLPK] Constraint 4 has 22 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 265
+[GLPK] Constraints: 167
+[GLPK] Constraint 0 has 14 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 11 variables, lb=1
+[GLPK] Constraint 3 has 17 variables, lb=1
+[GLPK] Constraint 4 has 22 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 265
+[GLPK] Constraints: 177
+[GLPK] Constraint 0 has 14 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 11 variables, lb=1
+[GLPK] Constraint 3 has 17 variables, lb=1
+[GLPK] Constraint 4 has 22 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 265
+[GLPK] Constraints: 179
+[GLPK] Constraint 0 has 14 variables, lb=1
+[GLPK] Constraint 1 has 16 variables, lb=1
+[GLPK] Constraint 2 has 11 variables, lb=1
+[GLPK] Constraint 3 has 17 variables, lb=1
+[GLPK] Constraint 4 has 22 variables, lb=1
+[GLPK] MIP status: 5
+2026-04-06 06:59:54,155 [INFO] instance random-80-23 finished: wall_clock_s=305.370514 returncode=0
+2026-04-06 06:59:54,155 [INFO] random-80-23: wall=305.371s return=0
+2026-04-06 06:59:54,155 [INFO] --- instance randsimple-100-13 ---
+2026-04-06 06:59:54,155 [INFO] command: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json/randsimple-100-13.json --output /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/randsimple-100-13_output.json --verbosity 1
+2026-04-06 06:59:54,160 [INFO] solver stdout:
+Loaded polygon with 100 vertices
+Mode: iterative (paper's main algorithm)
+
+=== Solution ===
+Status: Suboptimal
+Number of guards: 0
+Iterations: 0
+Total time: 0.002 seconds
+
+Arrangement statistics:
+  Final candidates: 14
+  Final witnesses: 140096007919112
+  Granularity: 2^--1527105904
+  Granularity updates: 0
+
+Solution written to: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/randsimple-100-13_output.json
+2026-04-06 06:59:54,160 [DEBUG] solver stderr: (empty)
+2026-04-06 06:59:54,160 [INFO] instance randsimple-100-13 finished: wall_clock_s=0.004390 returncode=2
+2026-04-06 06:59:54,160 [INFO] randsimple-100-13: wall=0.004s return=2
+2026-04-06 06:59:54,160 [INFO] --- instance randsimple-20-24 ---
+2026-04-06 06:59:54,160 [INFO] command: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json/randsimple-20-24.json --output /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/randsimple-20-24_output.json --verbosity 1
+2026-04-06 07:00:01,493 [INFO] solver stdout:
+Loaded polygon with 20 vertices
+Mode: iterative (paper's main algorithm)
+GLPK Integer Optimizer 5.0
+54 rows, 121 columns, 1772 non-zeros
+121 integer variables, all of which are binary
+Preprocessing...
+53 rows, 77 columns, 1771 non-zeros
+77 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 53
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+53 rows, 77 columns, 1771 non-zeros
+      0: obj =   8.196721311e-03 inf =   5.300e+01 (53)
+      3: obj =   3.008196721e+00 inf =   0.000e+00 (0)
+*    18: obj =   2.341530055e+00 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    18: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 3.00819672131
++    52: mip =   3.008196721e+00 >=     tree is empty   0.0% (0; 15)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+64 rows, 121 columns, 1853 non-zeros
+121 integer variables, all of which are binary
+Preprocessing...
+57 rows, 81 columns, 1846 non-zeros
+81 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 57
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+57 rows, 81 columns, 1846 non-zeros
+      0: obj =   5.737704918e-02 inf =   5.700e+01 (57)
+      3: obj =   3.057377049e+00 inf =   0.000e+00 (0)
+*    22: obj =   2.412568306e+00 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    22: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 5.09016393443
+Solution found by heuristic: 4.09016393443
++    50: >>>>>   3.090163934e+00 >=   2.759562842e+00  10.7% (17; 0)
++    63: >>>>>   3.057377049e+00 >=   3.049180328e+00   0.3% (9; 12)
++    65: mip =   3.057377049e+00 >=     tree is empty   0.0% (0; 33)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+69 rows, 121 columns, 1876 non-zeros
+121 integer variables, all of which are binary
+Preprocessing...
+59 rows, 83 columns, 1866 non-zeros
+83 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 59
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+59 rows, 83 columns, 1866 non-zeros
+      0: obj =   8.196721311e-02 inf =   5.900e+01 (59)
+      4: obj =   4.081967213e+00 inf =   0.000e+00 (0)
+*    25: obj =   2.442622951e+00 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    25: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 4.11475409836
+Solution found by heuristic: 3.12295081967
++    47: >>>>>   3.114754098e+00 >=   2.618852459e+00  15.9% (12; 0)
++    61: >>>>>   3.106557377e+00 >=   3.073770492e+00   1.1% (7; 7)
++    65: >>>>>   3.081967213e+00 >=   3.073770492e+00   0.3% (6; 11)
++    69: mip =   3.081967213e+00 >=     tree is empty   0.0% (0; 23)
+INTEGER OPTIMAL SOLUTION FOUND
+
+=== Solution ===
+Status: Optimal
+Number of guards: 3
+Iterations: 1
+Total time: 7.33 seconds
+
+Arrangement statistics:
+  Final candidates: 87
+  Final witnesses: 87
+  Granularity: 2^-4
+  Granularity updates: 0
+
+Solution written to: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/randsimple-20-24_output.json
+2026-04-06 07:00:01,493 [INFO] solver stderr:
+[GLPK] Return code: 0
+[GLPK] Variables: 121
+[GLPK] Constraints: 54
+[GLPK] Constraint 0 has 38 variables, lb=1
+[GLPK] Constraint 1 has 51 variables, lb=1
+[GLPK] Constraint 2 has 41 variables, lb=1
+[GLPK] Constraint 3 has 34 variables, lb=1
+[GLPK] Constraint 4 has 42 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 121
+[GLPK] Constraints: 64
+[GLPK] Constraint 0 has 38 variables, lb=1
+[GLPK] Constraint 1 has 51 variables, lb=1
+[GLPK] Constraint 2 has 41 variables, lb=1
+[GLPK] Constraint 3 has 34 variables, lb=1
+[GLPK] Constraint 4 has 42 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 121
+[GLPK] Constraints: 69
+[GLPK] Constraint 0 has 38 variables, lb=1
+[GLPK] Constraint 1 has 51 variables, lb=1
+[GLPK] Constraint 2 has 41 variables, lb=1
+[GLPK] Constraint 3 has 34 variables, lb=1
+[GLPK] Constraint 4 has 42 variables, lb=1
+[GLPK] MIP status: 5
+2026-04-06 07:00:01,493 [INFO] instance randsimple-20-24 finished: wall_clock_s=7.332510 returncode=0
+2026-04-06 07:00:01,493 [INFO] randsimple-20-24: wall=7.333s return=0
+2026-04-06 07:00:01,493 [INFO] --- instance randsimple-40-7 ---
+2026-04-06 07:00:01,493 [INFO] command: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json/randsimple-40-7.json --output /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/randsimple-40-7_output.json --verbosity 1
+2026-04-06 07:01:24,111 [INFO] solver stdout:
+Loaded polygon with 40 vertices
+Mode: iterative (paper's main algorithm)
+GLPK Integer Optimizer 5.0
+108 rows, 318 columns, 3226 non-zeros
+318 integer variables, all of which are binary
+Preprocessing...
+107 rows, 139 columns, 3225 non-zeros
+139 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 107
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+107 rows, 139 columns, 3225 non-zeros
+      0: obj =   3.134796238e-03 inf =   1.070e+02 (107)
+      6: obj =   6.003134796e+00 inf =   0.000e+00 (0)
+*    42: obj =   4.669801463e+00 inf =   9.732e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    42: mip =     not found yet >=              -inf        (1; 0)
++    80: >>>>>   5.003134796e+00 >=   5.003134796e+00   0.0% (7; 0)
++    80: mip =   5.003134796e+00 >=     tree is empty   0.0% (0; 13)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+118 rows, 318 columns, 3236 non-zeros
+318 integer variables, all of which are binary
+Preprocessing...
+107 rows, 139 columns, 3225 non-zeros
+139 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 107
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+107 rows, 139 columns, 3225 non-zeros
+      0: obj =   3.448275862e-02 inf =   1.070e+02 (107)
+      6: obj =   6.034482759e+00 inf =   0.000e+00 (0)
+*    42: obj =   4.701149425e+00 inf =   9.732e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    42: mip =     not found yet >=              -inf        (1; 0)
++    80: >>>>>   5.034482759e+00 >=   5.034482759e+00   0.0% (7; 0)
++    80: mip =   5.034482759e+00 >=     tree is empty   0.0% (0; 13)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+128 rows, 318 columns, 3348 non-zeros
+318 integer variables, all of which are binary
+Preprocessing...
+111 rows, 143 columns, 3331 non-zeros
+143 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 111
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+111 rows, 143 columns, 3331 non-zeros
+      0: obj =   5.329153605e-02 inf =   1.110e+02 (111)
+      6: obj =   6.053291536e+00 inf =   0.000e+00 (0)
+*    50: obj =   4.722048067e+00 inf =   1.649e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    50: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 9.05329153605
+Solution found by heuristic: 8.05329153605
++   138: >>>>>   6.053291536e+00 >=   4.849529781e+00  19.9% (11; 0)
++   148: >>>>>   5.065830721e+00 >=   5.053291536e+00   0.2% (5; 11)
++   659: mip =   5.065830721e+00 >=     tree is empty   0.0% (0; 99)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+138 rows, 318 columns, 3367 non-zeros
+318 integer variables, all of which are binary
+Preprocessing...
+1 hidden packing inequaliti(es) were detected
+113 rows, 145 columns, 3342 non-zeros
+145 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 113
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+113 rows, 145 columns, 3342 non-zeros
+      0: obj =   7.836990596e-02 inf =   1.130e+02 (113)
+      8: obj =   8.078369906e+00 inf =   0.000e+00 (0)
+*    59: obj =   4.751306165e+00 inf =   1.089e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    59: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 8.08150470219
++    99: >>>>>   5.090909091e+00 >=   4.879623824e+00   4.2% (10; 0)
++   213: mip =   5.090909091e+00 >=     tree is empty   0.0% (0; 37)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+148 rows, 318 columns, 3396 non-zeros
+318 integer variables, all of which are binary
+Preprocessing...
+2 hidden packing inequaliti(es) were detected
+115 rows, 147 columns, 3363 non-zeros
+147 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 115
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+115 rows, 147 columns, 3363 non-zeros
+      0: obj =   1.034482759e-01 inf =   1.150e+02 (115)
+      7: obj =   7.103448276e+00 inf =   0.000e+00 (0)
+*    58: obj =   4.779519331e+00 inf =   7.517e-16 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    58: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 6.1065830721
++   128: >>>>>   5.128526646e+00 >=   5.106583072e+00   0.4% (11; 2)
++   135: >>>>>   5.115987461e+00 >=   5.109717868e+00   0.1% (3; 18)
++   298: mip =   5.115987461e+00 >=     tree is empty   0.0% (0; 61)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+158 rows, 318 columns, 3406 non-zeros
+318 integer variables, all of which are binary
+Preprocessing...
+2 hidden packing inequaliti(es) were detected
+115 rows, 147 columns, 3363 non-zeros
+147 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 115
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+115 rows, 147 columns, 3363 non-zeros
+      0: obj =   1.347962382e-01 inf =   1.150e+02 (115)
+      7: obj =   7.134796238e+00 inf =   0.000e+00 (0)
+*    58: obj =   4.810867294e+00 inf =   7.517e-16 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    58: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 6.13793103448
++   128: >>>>>   5.159874608e+00 >=   5.137931034e+00   0.4% (11; 2)
++   135: >>>>>   5.147335423e+00 >=   5.141065831e+00   0.1% (3; 18)
++   298: mip =   5.147335423e+00 >=     tree is empty   0.0% (0; 61)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+168 rows, 318 columns, 3416 non-zeros
+318 integer variables, all of which are binary
+Preprocessing...
+2 hidden packing inequaliti(es) were detected
+115 rows, 147 columns, 3363 non-zeros
+147 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 115
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+115 rows, 147 columns, 3363 non-zeros
+      0: obj =   1.661442006e-01 inf =   1.150e+02 (115)
+      7: obj =   7.166144201e+00 inf =   0.000e+00 (0)
+*    58: obj =   4.842215256e+00 inf =   7.517e-16 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    58: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 6.16927899687
++   128: >>>>>   5.191222571e+00 >=   5.169278997e+00   0.4% (11; 2)
++   135: >>>>>   5.178683386e+00 >=   5.172413793e+00   0.1% (3; 18)
++   298: mip =   5.178683386e+00 >=     tree is empty   0.0% (0; 61)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+176 rows, 318 columns, 3424 non-zeros
+318 integer variables, all of which are binary
+Preprocessing...
+2 hidden packing inequaliti(es) were detected
+115 rows, 147 columns, 3363 non-zeros
+147 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 115
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+115 rows, 147 columns, 3363 non-zeros
+      0: obj =   1.912225705e-01 inf =   1.150e+02 (115)
+      7: obj =   7.191222571e+00 inf =   0.000e+00 (0)
+*    58: obj =   4.867293626e+00 inf =   7.517e-16 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    58: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 6.19435736677
++   128: >>>>>   5.216300940e+00 >=   5.194357367e+00   0.4% (11; 2)
++   135: >>>>>   5.203761755e+00 >=   5.197492163e+00   0.1% (3; 18)
++   299: mip =   5.203761755e+00 >=     tree is empty   0.0% (0; 61)
+INTEGER OPTIMAL SOLUTION FOUND
+
+=== Solution ===
+Status: Optimal
+Number of guards: 5
+Iterations: 1
+Total time: 82.615 seconds
+
+Arrangement statistics:
+  Final candidates: 225
+  Final witnesses: 225
+  Granularity: 2^-4
+  Granularity updates: 0
+
+Solution written to: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/randsimple-40-7_output.json
+2026-04-06 07:01:24,112 [INFO] solver stderr:
+[GLPK] Return code: 0
+[GLPK] Variables: 318
+[GLPK] Constraints: 108
+[GLPK] Constraint 0 has 29 variables, lb=1
+[GLPK] Constraint 1 has 24 variables, lb=1
+[GLPK] Constraint 2 has 27 variables, lb=1
+[GLPK] Constraint 3 has 25 variables, lb=1
+[GLPK] Constraint 4 has 27 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 318
+[GLPK] Constraints: 118
+[GLPK] Constraint 0 has 29 variables, lb=1
+[GLPK] Constraint 1 has 24 variables, lb=1
+[GLPK] Constraint 2 has 27 variables, lb=1
+[GLPK] Constraint 3 has 25 variables, lb=1
+[GLPK] Constraint 4 has 27 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 318
+[GLPK] Constraints: 128
+[GLPK] Constraint 0 has 29 variables, lb=1
+[GLPK] Constraint 1 has 24 variables, lb=1
+[GLPK] Constraint 2 has 27 variables, lb=1
+[GLPK] Constraint 3 has 25 variables, lb=1
+[GLPK] Constraint 4 has 27 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 318
+[GLPK] Constraints: 138
+[GLPK] Constraint 0 has 29 variables, lb=1
+[GLPK] Constraint 1 has 24 variables, lb=1
+[GLPK] Constraint 2 has 27 variables, lb=1
+[GLPK] Constraint 3 has 25 variables, lb=1
+[GLPK] Constraint 4 has 27 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 318
+[GLPK] Constraints: 148
+[GLPK] Constraint 0 has 29 variables, lb=1
+[GLPK] Constraint 1 has 24 variables, lb=1
+[GLPK] Constraint 2 has 27 variables, lb=1
+[GLPK] Constraint 3 has 25 variables, lb=1
+[GLPK] Constraint 4 has 27 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 318
+[GLPK] Constraints: 158
+[GLPK] Constraint 0 has 29 variables, lb=1
+[GLPK] Constraint 1 has 24 variables, lb=1
+[GLPK] Constraint 2 has 27 variables, lb=1
+[GLPK] Constraint 3 has 25 variables, lb=1
+[GLPK] Constraint 4 has 27 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 318
+[GLPK] Constraints: 168
+[GLPK] Constraint 0 has 29 variables, lb=1
+[GLPK] Constraint 1 has 24 variables, lb=1
+[GLPK] Constraint 2 has 27 variables, lb=1
+[GLPK] Constraint 3 has 25 variables, lb=1
+[GLPK] Constraint 4 has 27 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 318
+[GLPK] Constraints: 176
+[GLPK] Constraint 0 has 29 variables, lb=1
+[GLPK] Constraint 1 has 24 variables, lb=1
+[GLPK] Constraint 2 has 27 variables, lb=1
+[GLPK] Constraint 3 has 25 variables, lb=1
+[GLPK] Constraint 4 has 27 variables, lb=1
+[GLPK] MIP status: 5
+2026-04-06 07:01:24,112 [INFO] instance randsimple-40-7 finished: wall_clock_s=82.618050 returncode=0
+2026-04-06 07:01:24,112 [INFO] randsimple-40-7: wall=82.618s return=0
+2026-04-06 07:01:24,112 [INFO] --- instance randsimple-60-23 ---
+2026-04-06 07:01:24,112 [INFO] command: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json/randsimple-60-23.json --output /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/randsimple-60-23_output.json --verbosity 1
+2026-04-06 07:08:16,087 [INFO] solver stdout:
+Loaded polygon with 60 vertices
+Mode: iterative (paper's main algorithm)
+GLPK Integer Optimizer 5.0
+164 rows, 446 columns, 6289 non-zeros
+446 integer variables, all of which are binary
+Preprocessing...
+163 rows, 211 columns, 6288 non-zeros
+211 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 163
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+163 rows, 211 columns, 6288 non-zeros
+      0: obj =   2.237136465e-03 inf =   1.630e+02 (163)
+      8: obj =   8.002237136e+00 inf =   0.000e+00 (0)
+*    50: obj =   5.835570470e+00 inf =   2.472e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    50: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 9.00223713647
++    64: >>>>>   6.002237136e+00 >=   6.002237136e+00 < 0.1% (6; 0)
++    64: mip =   6.002237136e+00 >=     tree is empty   0.0% (0; 11)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+174 rows, 446 columns, 6299 non-zeros
+446 integer variables, all of which are binary
+Preprocessing...
+163 rows, 211 columns, 6288 non-zeros
+211 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 163
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+163 rows, 211 columns, 6288 non-zeros
+      0: obj =   2.460850112e-02 inf =   1.630e+02 (163)
+      8: obj =   8.024608501e+00 inf =   0.000e+00 (0)
+*    50: obj =   5.857941834e+00 inf =   2.472e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    50: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 9.02460850112
++    64: >>>>>   6.024608501e+00 >=   6.024608501e+00   0.0% (6; 0)
++    64: mip =   6.024608501e+00 >=     tree is empty   0.0% (0; 11)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+184 rows, 446 columns, 6325 non-zeros
+446 integer variables, all of which are binary
+Preprocessing...
+164 rows, 212 columns, 6305 non-zeros
+212 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 164
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+164 rows, 212 columns, 6305 non-zeros
+      0: obj =   4.474272931e-02 inf =   1.640e+02 (164)
+      8: obj =   8.044742729e+00 inf =   0.000e+00 (0)
+*    48: obj =   5.879567487e+00 inf =   1.998e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    48: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 9.04474272931
++    69: >>>>>   6.044742729e+00 >=   5.935371613e+00   1.8% (5; 0)
++    77: mip =   6.044742729e+00 >=     tree is empty   0.0% (0; 9)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+194 rows, 446 columns, 6373 non-zeros
+446 integer variables, all of which are binary
+Preprocessing...
+166 rows, 214 columns, 6345 non-zeros
+214 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 166
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+166 rows, 214 columns, 6345 non-zeros
+      0: obj =   6.263982103e-02 inf =   1.660e+02 (166)
+      8: obj =   8.062639821e+00 inf =   0.000e+00 (0)
+*    55: obj =   5.898956003e+00 inf =   2.405e-16 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    55: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 9.06263982103
++    80: >>>>>   6.062639821e+00 >=   6.062639821e+00   0.0% (7; 0)
++    80: mip =   6.062639821e+00 >=     tree is empty   0.0% (0; 13)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+204 rows, 446 columns, 6383 non-zeros
+446 integer variables, all of which are binary
+Preprocessing...
+166 rows, 214 columns, 6345 non-zeros
+214 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 166
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+166 rows, 214 columns, 6345 non-zeros
+      0: obj =   8.501118568e-02 inf =   1.660e+02 (166)
+      8: obj =   8.085011186e+00 inf =   0.000e+00 (0)
+*    55: obj =   5.921327368e+00 inf =   2.405e-16 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    55: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 9.08501118568
++    80: >>>>>   6.085011186e+00 >=   6.085011186e+00 < 0.1% (7; 0)
++    80: mip =   6.085011186e+00 >=     tree is empty   0.0% (0; 13)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+214 rows, 446 columns, 6393 non-zeros
+446 integer variables, all of which are binary
+Preprocessing...
+166 rows, 214 columns, 6345 non-zeros
+214 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 166
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+166 rows, 214 columns, 6345 non-zeros
+      0: obj =   1.073825503e-01 inf =   1.660e+02 (166)
+      8: obj =   8.107382550e+00 inf =   0.000e+00 (0)
+*    55: obj =   5.943698732e+00 inf =   2.405e-16 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    55: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 9.10738255034
++    80: >>>>>   6.107382550e+00 >=   6.107382550e+00 < 0.1% (7; 0)
++    80: mip =   6.107382550e+00 >=     tree is empty   0.0% (0; 13)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+224 rows, 446 columns, 6403 non-zeros
+446 integer variables, all of which are binary
+Preprocessing...
+166 rows, 214 columns, 6345 non-zeros
+214 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 166
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+166 rows, 214 columns, 6345 non-zeros
+      0: obj =   1.297539150e-01 inf =   1.660e+02 (166)
+      8: obj =   8.129753915e+00 inf =   0.000e+00 (0)
+*    55: obj =   5.966070097e+00 inf =   2.405e-16 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    55: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 9.12975391499
++    80: >>>>>   6.129753915e+00 >=   6.129753915e+00   0.0% (7; 0)
++    80: mip =   6.129753915e+00 >=     tree is empty   0.0% (0; 13)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+234 rows, 446 columns, 6413 non-zeros
+446 integer variables, all of which are binary
+Preprocessing...
+166 rows, 214 columns, 6345 non-zeros
+214 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 166
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+166 rows, 214 columns, 6345 non-zeros
+      0: obj =   1.521252796e-01 inf =   1.660e+02 (166)
+      8: obj =   8.152125280e+00 inf =   0.000e+00 (0)
+*    55: obj =   5.988441462e+00 inf =   2.405e-16 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    55: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 9.15212527964
++    80: >>>>>   6.152125280e+00 >=   6.152125280e+00   0.0% (7; 0)
++    80: mip =   6.152125280e+00 >=     tree is empty   0.0% (0; 13)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+244 rows, 446 columns, 6429 non-zeros
+446 integer variables, all of which are binary
+Preprocessing...
+167 rows, 215 columns, 6352 non-zeros
+215 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 167
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+167 rows, 215 columns, 6352 non-zeros
+      0: obj =   1.722595078e-01 inf =   1.670e+02 (167)
+      9: obj =   9.172259508e+00 inf =   0.000e+00 (0)
+*    58: obj =   6.010812826e+00 inf =   5.921e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    58: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 7.1744966443
++    73: >>>>>   6.174496644e+00 >=   6.174496644e+00   0.0% (4; 0)
++    73: mip =   6.174496644e+00 >=     tree is empty   0.0% (0; 7)
+INTEGER OPTIMAL SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+251 rows, 446 columns, 6436 non-zeros
+446 integer variables, all of which are binary
+Preprocessing...
+167 rows, 215 columns, 6352 non-zeros
+215 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 167
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+167 rows, 215 columns, 6352 non-zeros
+      0: obj =   1.879194631e-01 inf =   1.670e+02 (167)
+      9: obj =   9.187919463e+00 inf =   0.000e+00 (0)
+*    58: obj =   6.026472782e+00 inf =   5.921e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    58: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 7.19015659955
++    73: >>>>>   6.190156600e+00 >=   6.190156600e+00   0.0% (4; 0)
++    73: mip =   6.190156600e+00 >=     tree is empty   0.0% (0; 7)
+INTEGER OPTIMAL SOLUTION FOUND
+
+=== Solution ===
+Status: Optimal
+Number of guards: 6
+Iterations: 1
+Total time: 411.972 seconds
+
+Arrangement statistics:
+  Final candidates: 317
+  Final witnesses: 317
+  Granularity: 2^-4
+  Granularity updates: 0
+
+Solution written to: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/randsimple-60-23_output.json
+2026-04-06 07:08:16,087 [INFO] solver stderr:
+[GLPK] Return code: 0
+[GLPK] Variables: 446
+[GLPK] Constraints: 164
+[GLPK] Constraint 0 has 48 variables, lb=1
+[GLPK] Constraint 1 has 41 variables, lb=1
+[GLPK] Constraint 2 has 41 variables, lb=1
+[GLPK] Constraint 3 has 34 variables, lb=1
+[GLPK] Constraint 4 has 43 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 446
+[GLPK] Constraints: 174
+[GLPK] Constraint 0 has 48 variables, lb=1
+[GLPK] Constraint 1 has 41 variables, lb=1
+[GLPK] Constraint 2 has 41 variables, lb=1
+[GLPK] Constraint 3 has 34 variables, lb=1
+[GLPK] Constraint 4 has 43 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 446
+[GLPK] Constraints: 184
+[GLPK] Constraint 0 has 48 variables, lb=1
+[GLPK] Constraint 1 has 41 variables, lb=1
+[GLPK] Constraint 2 has 41 variables, lb=1
+[GLPK] Constraint 3 has 34 variables, lb=1
+[GLPK] Constraint 4 has 43 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 446
+[GLPK] Constraints: 194
+[GLPK] Constraint 0 has 48 variables, lb=1
+[GLPK] Constraint 1 has 41 variables, lb=1
+[GLPK] Constraint 2 has 41 variables, lb=1
+[GLPK] Constraint 3 has 34 variables, lb=1
+[GLPK] Constraint 4 has 43 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 446
+[GLPK] Constraints: 204
+[GLPK] Constraint 0 has 48 variables, lb=1
+[GLPK] Constraint 1 has 41 variables, lb=1
+[GLPK] Constraint 2 has 41 variables, lb=1
+[GLPK] Constraint 3 has 34 variables, lb=1
+[GLPK] Constraint 4 has 43 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 446
+[GLPK] Constraints: 214
+[GLPK] Constraint 0 has 48 variables, lb=1
+[GLPK] Constraint 1 has 41 variables, lb=1
+[GLPK] Constraint 2 has 41 variables, lb=1
+[GLPK] Constraint 3 has 34 variables, lb=1
+[GLPK] Constraint 4 has 43 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 446
+[GLPK] Constraints: 224
+[GLPK] Constraint 0 has 48 variables, lb=1
+[GLPK] Constraint 1 has 41 variables, lb=1
+[GLPK] Constraint 2 has 41 variables, lb=1
+[GLPK] Constraint 3 has 34 variables, lb=1
+[GLPK] Constraint 4 has 43 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 446
+[GLPK] Constraints: 234
+[GLPK] Constraint 0 has 48 variables, lb=1
+[GLPK] Constraint 1 has 41 variables, lb=1
+[GLPK] Constraint 2 has 41 variables, lb=1
+[GLPK] Constraint 3 has 34 variables, lb=1
+[GLPK] Constraint 4 has 43 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 446
+[GLPK] Constraints: 244
+[GLPK] Constraint 0 has 48 variables, lb=1
+[GLPK] Constraint 1 has 41 variables, lb=1
+[GLPK] Constraint 2 has 41 variables, lb=1
+[GLPK] Constraint 3 has 34 variables, lb=1
+[GLPK] Constraint 4 has 43 variables, lb=1
+[GLPK] MIP status: 5
+[GLPK] Return code: 0
+[GLPK] Variables: 446
+[GLPK] Constraints: 251
+[GLPK] Constraint 0 has 48 variables, lb=1
+[GLPK] Constraint 1 has 41 variables, lb=1
+[GLPK] Constraint 2 has 41 variables, lb=1
+[GLPK] Constraint 3 has 34 variables, lb=1
+[GLPK] Constraint 4 has 43 variables, lb=1
+[GLPK] MIP status: 5
+2026-04-06 07:08:16,087 [INFO] instance randsimple-60-23 finished: wall_clock_s=411.974779 returncode=0
+2026-04-06 07:08:16,087 [INFO] randsimple-60-23: wall=411.975s return=0
+2026-04-06 07:08:16,087 [INFO] --- instance randsimple-80-23 ---
+2026-04-06 07:08:16,087 [INFO] command: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json/randsimple-80-23.json --output /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/randsimple-80-23_output.json --verbosity 1
+2026-04-06 07:20:28,516 [INFO] Batch start: solver=/run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver input_dir=/run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json output_dir=/run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output resume=True
+2026-04-06 07:20:28,517 [INFO] resume skip (already complete): gB_simple-simple_25:100v-10h_29
+2026-04-06 07:20:28,517 [INFO] resume skip (already complete): random-20-8
+2026-04-06 07:20:28,517 [INFO] resume skip (already complete): random-40-14
+2026-04-06 07:20:28,517 [INFO] resume skip (already complete): random-60-2
+2026-04-06 07:20:28,517 [INFO] resume skip (already complete): random-80-23
+2026-04-06 07:20:28,517 [INFO] resume skip (already complete): randsimple-100-13
+2026-04-06 07:20:28,517 [INFO] resume skip (already complete): randsimple-20-24
+2026-04-06 07:20:28,517 [INFO] resume skip (already complete): randsimple-40-7
+2026-04-06 07:20:28,517 [INFO] resume skip (already complete): randsimple-60-23
+2026-04-06 07:20:28,517 [INFO] --- instance randvon-20-5 ---
+2026-04-06 07:20:28,517 [INFO] command: /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/build/agp_solver /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_json/randvon-20-5.json --output /run/media/abd-faiyaz/Files/algo_sid_repo/Alg3/our_dataset/final_output/randvon-20-5_output.json --verbosity 1

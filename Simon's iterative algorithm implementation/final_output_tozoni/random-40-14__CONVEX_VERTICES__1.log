@@ -1,0 +1,2 @@
+idFile polSize guards iterations initWitnSize finalWitnSize initCandSize finalCandSize maxHorizontal IPSolved initDisTime insertDisTime selectCandTime initSolverTime solverTime scpResolTime newDisTime totalTime
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/instances/final/random-40-14.pol 40 5 2 22 33 83 99 3 4 2.9e-05 0.010983 0.009679 0.007967 0.011746 0.000347 0.000594 0.041374

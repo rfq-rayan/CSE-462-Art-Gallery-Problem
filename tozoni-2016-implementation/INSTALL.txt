@@ -1,0 +1,42 @@
+Tozoni (AGSol) — modern build
+=============================
+
+Dependencies (Fedora example):
+
+  sudo dnf install CGAL-devel glpk-devel boost-devel cmake gcc-c++ gmp-devel mpfr-devel
+
+Configure and build:
+
+  ./build.sh
+
+Or manually:
+
+  cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+  cmake --build build -j$(nproc)
+
+Options:
+
+  -DGLPK_ROOT=/path/to/prefix   (contains include/glpk.h and lib/libglpk.so)
+  -DENABLE_GLPK=OFF -DENABLE_XPRESS=ON -DXPRESS_ROOT=/path/to/xpress
+     (commercial Xpress SDK only if licensed)
+
+Run (from build/):
+
+  LD_LIBRARY_PATH=. ./artGallerySolver <file.pol> <logfile> <witness_mode> <solver_mode>
+
+  Witness modes: ALL_VERTICES, CONVEX_VERTICES, CHWA_POINTS, CHWA_POINTS_EXTENDED
+  Solver modes: 1 = GLPK + heuristic, 2 = GLPK only,
+                3 = GLPK + heuristic + bbox pre-filter (optimized),
+                4 = Xpress (if built)
+
+CTest:
+
+  cd build && ctest
+
+Python visualization (repository root 966/)
+
+  python3 -m venv tozoni_venv
+  tozoni_venv/bin/pip install -r tozoni-2016-implementation/visualization/requirements.txt
+  tozoni_venv/bin/python tozoni-2016-implementation/visualization/agp_viz_app.py
+
+See tozoni-2016-implementation/visualization/README.txt

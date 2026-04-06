@@ -1,0 +1,350 @@
+[ArtGallerySolver] --Initiating Iterative Solution--
+[ArtGallerySolver] Instance: ../instances/final/random-80-23.pol
+[ArtGallerySolver] Parameters: 
+[ArtGallerySolver] == Witness Set Option: CHWA_POINTS
+[ArtGallerySolver] == Solver Mode Option: 2
+
+[ArtGallerySolver] Selecting initial discretization...
+[ArtGallerySolver] Initiating Loop...
+
+[ArtGallerySolver] Initiating iteration 1
+[ArtGallerySolver] Inserting new witnesses...
+[ArtGallerySolver] Selecting guards...
+[ArtGallerySolver] Initiating solver...
+[ArtGallerySolver] Running solver...
+[PreSolver] Started with 166 candidates and finished with 43
+[PreSolver] Started with 52 constraints and finished with 21
+GLPK Simplex Optimizer 5.0
+21 rows, 43 columns, 90 non-zeros
+      0: obj =   0.000000000e+00 inf =   2.100e+01 (21)
+     12: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+*    28: obj =   1.100000000e+01 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+21 rows, 43 columns, 90 non-zeros
+43 integer variables, all of which are binary
+Integer optimization begins...
+Long-step dual simplex will be used
++    28: mip =     not found yet >=              -inf        (1; 0)
++    28: >>>>>   1.100000000e+01 >=   1.100000000e+01   0.0% (1; 0)
++    28: mip =   1.100000000e+01 >=     tree is empty   0.0% (0; 1)
+INTEGER OPTIMAL SOLUTION FOUND
+[SolverPLIGlpk] Result: 11
+[ArtGallerySolver] Area miss: 26.7042
+[ArtGallerySolver] # of uncovered regions: 3
+[ArtGallerySolver] 3 new witnesses were chosen...
+[PreSolver] Started with 166 candidates and finished with 46
+[PreSolver] Started with 55 constraints and finished with 23
+GLPK Simplex Optimizer 5.0
+23 rows, 46 columns, 104 non-zeros
+      0: obj =   0.000000000e+00 inf =   2.300e+01 (23)
+     12: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+*    31: obj =   1.100000000e+01 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+23 rows, 46 columns, 104 non-zeros
+46 integer variables, all of which are binary
+Integer optimization begins...
+Long-step dual simplex will be used
++    31: mip =     not found yet >=              -inf        (1; 0)
++    31: >>>>>   1.100000000e+01 >=   1.100000000e+01   0.0% (1; 0)
+[SolverPLIGlpk] GLPK found best solution possible
++    31: mip =   1.100000000e+01 >=   1.100000000e+01   0.0% (1; 0)
+SEARCH TERMINATED BY APPLICATION
+[SolverPLIGlpk] Result: 11
+[ArtGallerySolver] Area miss: 3.08333
+[ArtGallerySolver] # of uncovered regions: 2
+[ArtGallerySolver] 2 new witnesses were chosen...
+[PreSolver] Started with 166 candidates and finished with 46
+[PreSolver] Started with 57 constraints and finished with 22
+GLPK Simplex Optimizer 5.0
+22 rows, 46 columns, 98 non-zeros
+      0: obj =   0.000000000e+00 inf =   2.200e+01 (22)
+     12: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+*    31: obj =   1.100000000e+01 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+22 rows, 46 columns, 98 non-zeros
+46 integer variables, all of which are binary
+Integer optimization begins...
+Long-step dual simplex will be used
++    31: mip =     not found yet >=              -inf        (1; 0)
++    31: >>>>>   1.100000000e+01 >=   1.100000000e+01   0.0% (1; 0)
+[SolverPLIGlpk] GLPK found best solution possible
++    31: mip =   1.100000000e+01 >=   1.100000000e+01   0.0% (1; 0)
+SEARCH TERMINATED BY APPLICATION
+[SolverPLIGlpk] Result: 11
+[ArtGallerySolver] Area miss: 5.37208
+[ArtGallerySolver] # of uncovered regions: 3
+[ArtGallerySolver] 3 new witnesses were chosen...
+[PreSolver] Started with 166 candidates and finished with 47
+[PreSolver] Started with 60 constraints and finished with 22
+GLPK Simplex Optimizer 5.0
+22 rows, 47 columns, 99 non-zeros
+      0: obj =   0.000000000e+00 inf =   2.200e+01 (22)
+     12: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+*    28: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+22 rows, 47 columns, 99 non-zeros
+47 integer variables, all of which are binary
+Integer optimization begins...
+Long-step dual simplex will be used
++    28: mip =     not found yet >=              -inf        (1; 0)
++    28: >>>>>   1.200000000e+01 >=   1.200000000e+01   0.0% (1; 0)
++    28: mip =   1.200000000e+01 >=     tree is empty   0.0% (0; 1)
+INTEGER OPTIMAL SOLUTION FOUND
+[SolverPLIGlpk] Result: 12
+[ArtGallerySolver] Area miss: 14.6051
+[ArtGallerySolver] # of uncovered regions: 2
+[ArtGallerySolver] 2 new witnesses were chosen...
+[PreSolver] Started with 166 candidates and finished with 47
+[PreSolver] Started with 62 constraints and finished with 22
+GLPK Simplex Optimizer 5.0
+22 rows, 47 columns, 97 non-zeros
+      0: obj =   0.000000000e+00 inf =   2.200e+01 (22)
+     12: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+*    27: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+22 rows, 47 columns, 97 non-zeros
+47 integer variables, all of which are binary
+Integer optimization begins...
+Long-step dual simplex will be used
++    27: mip =     not found yet >=              -inf        (1; 0)
++    27: >>>>>   1.200000000e+01 >=   1.200000000e+01   0.0% (1; 0)
+[SolverPLIGlpk] GLPK found best solution possible
++    27: mip =   1.200000000e+01 >=   1.200000000e+01   0.0% (1; 0)
+SEARCH TERMINATED BY APPLICATION
+[SolverPLIGlpk] Result: 12
+[ArtGallerySolver] Area miss: 4.90909
+[ArtGallerySolver] # of uncovered regions: 1
+[ArtGallerySolver] 1 new witnesses were chosen...
+[PreSolver] Started with 166 candidates and finished with 48
+[PreSolver] Started with 63 constraints and finished with 23
+GLPK Simplex Optimizer 5.0
+23 rows, 48 columns, 104 non-zeros
+      0: obj =   0.000000000e+00 inf =   2.300e+01 (23)
+     12: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+*    27: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+23 rows, 48 columns, 104 non-zeros
+48 integer variables, all of which are binary
+Integer optimization begins...
+Long-step dual simplex will be used
++    27: mip =     not found yet >=              -inf        (1; 0)
++    27: >>>>>   1.200000000e+01 >=   1.200000000e+01   0.0% (1; 0)
+[SolverPLIGlpk] GLPK found best solution possible
++    27: mip =   1.200000000e+01 >=   1.200000000e+01   0.0% (1; 0)
+SEARCH TERMINATED BY APPLICATION
+[SolverPLIGlpk] Result: 12
+[ArtGallerySolver] Area miss: 1.63636
+[ArtGallerySolver] # of uncovered regions: 1
+[ArtGallerySolver] 1 new witnesses were chosen...
+[PreSolver] Started with 166 candidates and finished with 48
+[PreSolver] Started with 64 constraints and finished with 23
+GLPK Simplex Optimizer 5.0
+23 rows, 48 columns, 104 non-zeros
+      0: obj =   0.000000000e+00 inf =   2.300e+01 (23)
+     12: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+*    28: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+23 rows, 48 columns, 104 non-zeros
+48 integer variables, all of which are binary
+Integer optimization begins...
+Long-step dual simplex will be used
++    28: mip =     not found yet >=              -inf        (1; 0)
++    28: >>>>>   1.200000000e+01 >=   1.200000000e+01   0.0% (1; 0)
+[SolverPLIGlpk] GLPK found best solution possible
++    28: mip =   1.200000000e+01 >=   1.200000000e+01   0.0% (1; 0)
+SEARCH TERMINATED BY APPLICATION
+[SolverPLIGlpk] Result: 12
+[ArtGallerySolver] Area miss: 0.222222
+[ArtGallerySolver] # of uncovered regions: 1
+[ArtGallerySolver] 1 new witnesses were chosen...
+[PreSolver] Started with 166 candidates and finished with 48
+[PreSolver] Started with 65 constraints and finished with 21
+GLPK Simplex Optimizer 5.0
+21 rows, 48 columns, 85 non-zeros
+      0: obj =   0.000000000e+00 inf =   2.100e+01 (21)
+     12: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+*    26: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+21 rows, 48 columns, 85 non-zeros
+48 integer variables, all of which are binary
+Integer optimization begins...
+Long-step dual simplex will be used
++    26: mip =     not found yet >=              -inf        (1; 0)
++    26: >>>>>   1.200000000e+01 >=   1.200000000e+01   0.0% (1; 0)
+[SolverPLIGlpk] GLPK found best solution possible
++    26: mip =   1.200000000e+01 >=   1.200000000e+01   0.0% (1; 0)
+SEARCH TERMINATED BY APPLICATION
+[SolverPLIGlpk] Result: 12
+[ArtGallerySolver] Area miss: 0
+[ArtGallerySolver] Comparing upper bound with lower bound...
+[ArtGallerySolver] Lower Bound: 11
+[ArtGallerySolver] Upper Bound: 12
+[ArtGallerySolver] Selecting new witnesses...
+[ArtGallerySolver] # of uncovered regions found: 3
+
+[ArtGallerySolver] Initiating iteration 2
+[ArtGallerySolver] Inserting new witnesses...
+[ArtGallerySolver] Selecting guards...
+[ArtGallerySolver] Initiating solver...
+[ArtGallerySolver] Running solver...
+[PreSolver] Started with 181 candidates and finished with 50
+[PreSolver] Started with 65 constraints and finished with 25
+GLPK Simplex Optimizer 5.0
+25 rows, 50 columns, 117 non-zeros
+      0: obj =   0.000000000e+00 inf =   2.500e+01 (25)
+     12: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+*    32: obj =   1.100000000e+01 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+25 rows, 50 columns, 117 non-zeros
+50 integer variables, all of which are binary
+Integer optimization begins...
+Long-step dual simplex will be used
++    32: mip =     not found yet >=              -inf        (1; 0)
++    32: >>>>>   1.100000000e+01 >=   1.100000000e+01   0.0% (1; 0)
+[SolverPLIGlpk] GLPK found best solution possible
++    32: mip =   1.100000000e+01 >=   1.100000000e+01   0.0% (1; 0)
+SEARCH TERMINATED BY APPLICATION
+[SolverPLIGlpk] Result: 11
+[ArtGallerySolver] Area miss: 4.28571
+[ArtGallerySolver] # of uncovered regions: 2
+[ArtGallerySolver] 2 new witnesses were chosen...
+[PreSolver] Started with 181 candidates and finished with 50
+[PreSolver] Started with 67 constraints and finished with 24
+GLPK Simplex Optimizer 5.0
+24 rows, 50 columns, 111 non-zeros
+      0: obj =   0.000000000e+00 inf =   2.400e+01 (24)
+     12: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+*    31: obj =   1.100000000e+01 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+24 rows, 50 columns, 111 non-zeros
+50 integer variables, all of which are binary
+Integer optimization begins...
+Long-step dual simplex will be used
++    31: mip =     not found yet >=              -inf        (1; 0)
++    31: >>>>>   1.100000000e+01 >=   1.100000000e+01   0.0% (1; 0)
+[SolverPLIGlpk] GLPK found best solution possible
++    31: mip =   1.100000000e+01 >=   1.100000000e+01   0.0% (1; 0)
+SEARCH TERMINATED BY APPLICATION
+[SolverPLIGlpk] Result: 11
+[ArtGallerySolver] Area miss: 5.37208
+[ArtGallerySolver] # of uncovered regions: 3
+[ArtGallerySolver] 3 new witnesses were chosen...
+[PreSolver] Started with 181 candidates and finished with 52
+[PreSolver] Started with 70 constraints and finished with 24
+GLPK Simplex Optimizer 5.0
+24 rows, 52 columns, 115 non-zeros
+      0: obj =   0.000000000e+00 inf =   2.400e+01 (24)
+     12: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+*    28: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+24 rows, 52 columns, 115 non-zeros
+52 integer variables, all of which are binary
+Integer optimization begins...
+Long-step dual simplex will be used
++    28: mip =     not found yet >=              -inf        (1; 0)
++    28: >>>>>   1.200000000e+01 >=   1.200000000e+01   0.0% (1; 0)
++    28: mip =   1.200000000e+01 >=     tree is empty   0.0% (0; 1)
+INTEGER OPTIMAL SOLUTION FOUND
+[SolverPLIGlpk] Result: 12
+[ArtGallerySolver] Area miss: 14.6051
+[ArtGallerySolver] Comparing upper bound with lower bound...
+[ArtGallerySolver] Lower Bound: 11
+[ArtGallerySolver] Upper Bound: 12
+[ArtGallerySolver] Selecting new witnesses...
+[ArtGallerySolver] # of uncovered regions found: 2
+
+[ArtGallerySolver] Initiating iteration 3
+[ArtGallerySolver] Inserting new witnesses...
+[ArtGallerySolver] Selecting guards...
+[ArtGallerySolver] Initiating solver...
+[ArtGallerySolver] Running solver...
+[PreSolver] Started with 191 candidates and finished with 53
+[PreSolver] Started with 74 constraints and finished with 24
+GLPK Simplex Optimizer 5.0
+24 rows, 53 columns, 118 non-zeros
+      0: obj =   0.000000000e+00 inf =   2.400e+01 (24)
+     12: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+*    32: obj =   1.100000000e+01 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+24 rows, 53 columns, 118 non-zeros
+53 integer variables, all of which are binary
+Integer optimization begins...
+Long-step dual simplex will be used
++    32: mip =     not found yet >=              -inf        (1; 0)
++    32: >>>>>   1.100000000e+01 >=   1.100000000e+01   0.0% (1; 0)
+[SolverPLIGlpk] GLPK found best solution possible
++    32: mip =   1.100000000e+01 >=   1.100000000e+01   0.0% (1; 0)
+SEARCH TERMINATED BY APPLICATION
+[SolverPLIGlpk] Result: 11
+[ArtGallerySolver] Area miss: 12.5457
+[ArtGallerySolver] # of uncovered regions: 3
+[ArtGallerySolver] 3 new witnesses were chosen...
+[PreSolver] Started with 191 candidates and finished with 53
+[PreSolver] Started with 77 constraints and finished with 24
+GLPK Simplex Optimizer 5.0
+24 rows, 53 columns, 114 non-zeros
+      0: obj =   0.000000000e+00 inf =   2.400e+01 (24)
+     12: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+*    28: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+24 rows, 53 columns, 114 non-zeros
+53 integer variables, all of which are binary
+Integer optimization begins...
+Long-step dual simplex will be used
++    28: mip =     not found yet >=              -inf        (1; 0)
++    28: >>>>>   1.200000000e+01 >=   1.200000000e+01   0.0% (1; 0)
++    28: mip =   1.200000000e+01 >=     tree is empty   0.0% (0; 1)
+INTEGER OPTIMAL SOLUTION FOUND
+[SolverPLIGlpk] Result: 12
+[ArtGallerySolver] Area miss: 14.6051
+[ArtGallerySolver] Comparing upper bound with lower bound...
+[ArtGallerySolver] Lower Bound: 11
+[ArtGallerySolver] Upper Bound: 12
+[ArtGallerySolver] Selecting new witnesses...
+[ArtGallerySolver] # of uncovered regions found: 3
+
+[ArtGallerySolver] Initiating iteration 4
+[ArtGallerySolver] Inserting new witnesses...
+[ArtGallerySolver] Selecting guards...
+[ArtGallerySolver] Initiating solver...
+[ArtGallerySolver] Running solver...
+[PreSolver] Started with 218 candidates and finished with 61
+[PreSolver] Started with 85 constraints and finished with 27
+GLPK Simplex Optimizer 5.0
+27 rows, 61 columns, 171 non-zeros
+      0: obj =   0.000000000e+00 inf =   2.700e+01 (27)
+     12: obj =   1.200000000e+01 inf =   0.000e+00 (0)
+*    31: obj =   1.150000000e+01 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+27 rows, 61 columns, 171 non-zeros
+61 integer variables, all of which are binary
+Integer optimization begins...
+Long-step dual simplex will be used
++    31: mip =     not found yet >=              -inf        (1; 0)
+Solution found by heuristic: 16
+Solution found by heuristic: 14
+Solution found by heuristic: 12
++    35: mip =   1.200000000e+01 >=     tree is empty   0.0% (0; 5)
+INTEGER OPTIMAL SOLUTION FOUND
+[SolverPLIGlpk] Result: 12
+[ArtGallerySolver] Area miss: 9.92114
+[ArtGallerySolver] Comparing upper bound with lower bound...
+[ArtGallerySolver] Lower Bound: 12
+[ArtGallerySolver] Upper Bound: 12
+[ArtGallerySolver] Found optimal solution!!
+[ArtGallerySolver] CPU time: 0.224425 secs.
+[ArtGallerySolver] --Finalizing Iterative Solution--

@@ -1,0 +1,5 @@
+instance: randsimple-40-7
+wall_clock_seconds: 82.618050
+solve_time_seconds: 82.615
+status: optimal
+returncode: 0

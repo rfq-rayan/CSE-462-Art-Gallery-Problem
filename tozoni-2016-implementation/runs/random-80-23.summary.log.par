@@ -1,0 +1,2 @@
+idFile polSize LB UB iterations initWitnSize finalWitnSize initCandSize finalCandSize maxHorizontal IPSolved initDisTime insertDisTime selectCandTime initSolverTime solverTime scpResolTime newDisTime totalTime
+../instances/final/random-80-23.pol 80 11 12 3 52 74 166 191 8 13 7.2e-05 0.039584 0.016996 0.042439 0.078159 0.003729 0.003396 0.181041

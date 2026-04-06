@@ -1,0 +1,30 @@
+{
+  "guards": [
+    {
+      "x": 8.0,
+      "y": 10.0
+    },
+    {
+      "x": 2.0,
+      "y": 2.0
+    },
+    {
+      "x": 5.0,
+      "y": 4.0
+    }
+  ],
+  "iterations": 1,
+  "mode": "iterative",
+  "num_guards": 3,
+  "solve_time_seconds": 5.111,
+  "statistics": {
+    "final_candidates": 25,
+    "final_granularity_k": 4,
+    "final_witnesses": 25,
+    "granularity_updates": 0,
+    "ip_time": 0.0,
+    "split_time": 0.0,
+    "visibility_time": 0.0
+  },
+  "status": "optimal"
+}

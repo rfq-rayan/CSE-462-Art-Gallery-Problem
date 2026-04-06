@@ -1,0 +1,2 @@
+idFile polSize guards iterations initWitnSize finalWitnSize initCandSize finalCandSize maxHorizontal IPSolved initDisTime insertDisTime selectCandTime initSolverTime solverTime scpResolTime newDisTime totalTime
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/instances/final/gD_ortho-ortho_20:100v-10h_23.pol 100 10 3 100 137 1247 2054 6 9 4.8e-05 0.93469 1.19695 1.57557 0.798696 0.035448 0.008575 4.5345

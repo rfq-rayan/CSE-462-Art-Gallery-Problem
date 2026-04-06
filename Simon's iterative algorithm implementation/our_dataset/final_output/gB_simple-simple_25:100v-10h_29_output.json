@@ -1,0 +1,30 @@
+{
+  "guards": [
+    {
+      "x": -11.065727033419535,
+      "y": 5.575204622000456
+    },
+    {
+      "x": -7.131827746052295,
+      "y": -2.827424867078662
+    },
+    {
+      "x": 9.368214479181916,
+      "y": 2.2242229878902435
+    }
+  ],
+  "iterations": 1,
+  "mode": "iterative",
+  "num_guards": 3,
+  "solve_time_seconds": 34.704,
+  "statistics": {
+    "final_candidates": 116,
+    "final_granularity_k": 4,
+    "final_witnesses": 116,
+    "granularity_updates": 0,
+    "ip_time": 0.0,
+    "split_time": 0.0,
+    "visibility_time": 0.0
+  },
+  "status": "optimal"
+}

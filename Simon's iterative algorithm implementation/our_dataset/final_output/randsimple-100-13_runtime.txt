@@ -1,0 +1,5 @@
+instance: randsimple-100-13
+wall_clock_seconds: 0.004390
+solve_time_seconds: 0.002
+status: suboptimal
+returncode: 2

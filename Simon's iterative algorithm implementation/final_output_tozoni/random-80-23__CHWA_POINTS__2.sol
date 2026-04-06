@@ -1,0 +1,2 @@
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/instances/final/random-80-23.pol
+12 19/1 25/1 19/1 15/1 10/1 36/1 26/1 2/1 25/1 29/1 36/1 18/1 38/1 32/1 197/12 37/1 12/5 9/1 7/1 16/1 16/1 26/1 32/1 19/1 

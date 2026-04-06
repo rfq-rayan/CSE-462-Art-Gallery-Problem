@@ -1,0 +1,2 @@
+idFile polSize LB UB iterations initWitnSize finalWitnSize initCandSize finalCandSize maxHorizontal IPSolved initDisTime insertDisTime selectCandTime initSolverTime solverTime scpResolTime newDisTime totalTime
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/instances/final/randsimple-80-23.pol 80 11 12 2 80 93 189 213 5 8 3e-05 0.107222 0.055354 0.063125 0.088376 0.00168 0.003352 0.317744

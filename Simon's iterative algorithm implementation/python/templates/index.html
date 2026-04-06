@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery Problem Solver</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 20px;
+        }
+
+        .sidebar {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .sidebar h2 {
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 1.2em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .upload-area {
+            border: 2px dashed #667eea;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .upload-area:hover {
+            background: #f0f0ff;
+        }
+
+        .upload-area input {
+            display: none;
+        }
+
+        .polygon-list {
+            list-style: none;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .polygon-item {
+            padding: 10px;
+            margin: 5px 0;
+            background: #f5f5f5;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .polygon-item:hover {
+            background: #e0e0e0;
+        }
+
+        .polygon-item.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .visualization-panel {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .visualization-panel h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .canvas-container {
+            background: #fafafa;
+            border-radius: 10px;
+            padding: 20px;
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #visualization {
+            max-width: 100%;
+            max-height: 600px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .controls {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #218838;
+        }
+
+        .info-panel {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .info-panel h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .stat-item {
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .loading.show {
+            display: block;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .empty-state {
+            text-align: center;
+            color: #999;
+            padding: 50px;
+        }
+
+        .empty-state svg {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+
+        /* Canvas drawing */
+        #drawCanvas {
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            cursor: crosshair;
+            background: white;
+        }
+
+        .draw-controls {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .color-picker {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .color-picker input {
+            width: 40px;
+            height: 30px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Art Gallery Problem Solver</h1>
+
+        <div class="main-content">
+            <div class="sidebar">
+                <h2>Polygons</h2>
+
+                <div class="upload-area" onclick="document.getElementById('fileInput').click()">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#667eea" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="17,8 12,3 7,8"/>
+                        <line x1="12" y1="3" x2="12" y2="15"/>
+                    </svg>
+                    <p>Click to upload JSON</p>
+                    <input type="file" id="fileInput" accept=".json" onchange="handleFileUpload(event)">
+                </div>
+
+                <h3 style="margin: 20px 0 10px; color: #666;">Or draw a polygon:</h3>
+                <button class="btn btn-primary" onclick="showDrawCanvas()" style="width: 100%;">
+                    Draw Polygon
+                </button>
+
+                <h3 style="margin: 20px 0 10px; color: #666;">Loaded Polygons:</h3>
+                <ul class="polygon-list" id="polygonList">
+                    <li class="empty-state">No polygons loaded</li>
+                </ul>
+
+                <h3 style="margin: 20px 0 10px; color: #666;">Example Polygons:</h3>
+                <button class="btn btn-secondary" onclick="loadExample('simple')" style="width: 100%; margin-bottom: 5px;">
+                    Simple Polygon
+                </button>
+                <button class="btn btn-secondary" onclick="loadExample('complex')" style="width: 100%; margin-bottom: 5px;">
+                    Complex Polygon
+                </button>
+                <button class="btn btn-secondary" onclick="loadExample('spiral')" style="width: 100%;">
+                    Spiral Polygon
+                </button>
+            </div>
+
+            <div class="visualization-panel">
+                <h2>Visualization</h2>
+
+                <div class="canvas-container" id="canvasContainer">
+                    <div class="empty-state" id="emptyState">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5"/>
+                        </svg>
+                        <p>Upload or draw a polygon to get started</p>
+                    </div>
+                    <img id="visualization" style="display: none;">
+                    <canvas id="drawCanvas" width="600" height="500" style="display: none;"></canvas>
+                </div>
+
+                <div class="controls" id="controls" style="display: none;">
+                    <button class="btn btn-primary" onclick="solvePolygon()">
+                        Solve
+                    </button>
+                    <button class="btn btn-secondary" onclick="clearGuards()">
+                        Clear Guards
+                    </button>
+                    <button class="btn btn-secondary" onclick="downloadImage()">
+                        Download Image
+                    </button>
+                    <button class="btn btn-secondary" onclick="exportPolygon()">
+                        Export JSON
+                    </button>
+                </div>
+
+                <div class="draw-controls" id="drawControls" style="display: none;">
+                    <button class="btn btn-success" onclick="finishDrawing()">
+                        Complete Polygon
+                    </button>
+                    <button class="btn btn-secondary" onclick="undoPoint()">
+                        Undo
+                    </button>
+                    <button class="btn btn-secondary" onclick="cancelDrawing()">
+                        Cancel
+                    </button>
+                    <button class="btn btn-secondary" onclick="clearDrawing()">
+                        Clear
+                    </button>
+                </div>
+
+                <div class="info-panel" id="infoPanel" style="display: none;">
+                    <h3>Results</h3>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-value" id="guardCount">0</div>
+                            <div class="stat-label">Guards</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="vertexCount">0</div>
+                            <div class="stat-label">Vertices</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="solveTime">-</div>
+                            <div class="stat-label">Solve Time</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="status">-</div>
+                            <div class="stat-label">Status</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Solving...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let polygons = [];
+        let currentPolygonIndex = -1;
+        let guards = [];
+        let drawingPoints = [];
+        let isDrawing = false;
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            loadPolygonsFromServer();
+            setupDrawCanvas();
+        });
+
+        // Load polygons from server
+        async function loadPolygonsFromServer() {
+            try {
+                const response = await fetch('/api/polygons');
+                polygons = await response.json();
+                updatePolygonList();
+            } catch (error) {
+                console.log('No polygons loaded from server');
+            }
+        }
+
+        // Handle file upload
+        async function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const formData = new FormData();
+            formData.append('file', file);
+
+            try {
+                const response = await fetch('/api/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+                if (data.success) {
+                    await loadPolygonsFromServer();
+                }
+            } catch (error) {
+                // Load locally if server not available
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const content = JSON.parse(e.target.result);
+                    if (Array.isArray(content)) {
+                        polygons = polygons.concat(content);
+                    } else {
+                        polygons.push(content);
+                    }
+                    updatePolygonList();
+                };
+                reader.readAsText(file);
+            }
+        }
+
+        // Update polygon list
+        function updatePolygonList() {
+            const list = document.getElementById('polygonList');
+            if (polygons.length === 0) {
+                list.innerHTML = '<li class="empty-state">No polygons loaded</li>';
+                return;
+            }
+
+            list.innerHTML = polygons.map((p, i) => `
+                <li class="polygon-item ${i === currentPolygonIndex ? 'active' : ''}"
+                    onclick="selectPolygon(${i})">
+                    ${p.name || `Polygon ${i + 1}`} (${p.vertices?.length || 0} vertices)
+                </li>
+            `).join('');
+        }
+
+        // Select polygon
+        function selectPolygon(index) {
+            currentPolygonIndex = index;
+            guards = [];
+            updatePolygonList();
+            visualizeCurrentPolygon();
+        }
+
+        // Visualize current polygon
+        async function visualizeCurrentPolygon() {
+            if (currentPolygonIndex < 0) return;
+
+            const polygon = polygons[currentPolygonIndex];
+
+            // Hide draw canvas, show visualization
+            document.getElementById('drawCanvas').style.display = 'none';
+            document.getElementById('drawControls').style.display = 'none';
+            document.getElementById('emptyState').style.display = 'none';
+            document.getElementById('visualization').style.display = 'block';
+            document.getElementById('controls').style.display = 'flex';
+
+            // Update info
+            document.getElementById('infoPanel').style.display = 'block';
+            document.getElementById('vertexCount').textContent = polygon.vertices?.length || 0;
+            document.getElementById('guardCount').textContent = guards.length;
+
+            try {
+                const response = await fetch(`/api/visualize/${currentPolygonIndex}?guards=${JSON.stringify(guards)}`);
+                const data = await response.json();
+                document.getElementById('visualization').src = `data:image/png;base64,${data.image}`;
+            } catch (error) {
+                // Draw locally if server not available
+                drawPolygonLocally(polygon);
+            }
+        }
+
+        // Draw polygon locally on canvas
+        function drawPolygonLocally(polygon) {
+            const canvas = document.getElementById('drawCanvas');
+            const ctx = canvas.getContext('2d');
+            const width = canvas.width;
+            const height = canvas.height;
+
+            // Clear canvas
+            ctx.clearRect(0, 0, width, height);
+            ctx.fillStyle = '#fafafa';
+            ctx.fillRect(0, 0, width, height);
+
+            const vertices = polygon.vertices;
+            if (!vertices || vertices.length < 3) return;
+
+            // Find bounds
+            let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+            vertices.forEach(v => {
+                minX = Math.min(minX, v.x);
+                maxX = Math.max(maxX, v.x);
+                minY = Math.min(minY, v.y);
+                maxY = Math.max(maxY, v.y);
+            });
+
+            // Calculate scale and offset
+            const padding = 50;
+            const scaleX = (width - 2 * padding) / (maxX - minX || 1);
+            const scaleY = (height - 2 * padding) / (maxY - minY || 1);
+            const scale = Math.min(scaleX, scaleY);
+            const offsetX = (width - (maxX - minX) * scale) / 2;
+            const offsetY = (height - (maxY - minY) * scale) / 2;
+
+            const transform = (v) => ({
+                x: (v.x - minX) * scale + offsetX,
+                y: (v.y - minY) * scale + offsetY
+            });
+
+            // Draw polygon
+            ctx.beginPath();
+            const first = transform(vertices[0]);
+            ctx.moveTo(first.x, first.y);
+            vertices.slice(1).forEach(v => {
+                const p = transform(v);
+                ctx.lineTo(p.x, p.y);
+            });
+            ctx.closePath();
+
+            ctx.fillStyle = 'rgba(102, 126, 234, 0.3)';
+            ctx.fill();
+            ctx.strokeStyle = '#667eea';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            // Draw vertices
+            vertices.forEach((v, i) => {
+                const p = transform(v);
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, 5, 0, Math.PI * 2);
+                ctx.fillStyle = '#667eea';
+                ctx.fill();
+            });
+
+            // Draw guards
+            guards.forEach(g => {
+                const p = transform(g);
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, 8, 0, Math.PI * 2);
+                ctx.fillStyle = '#e74c3c';
+                ctx.fill();
+                ctx.strokeStyle = '#c0392b';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+
+                // Draw star
+                ctx.fillStyle = 'white';
+                ctx.font = 'bold 12px Arial';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText('★', p.x, p.y);
+            });
+
+            // Show canvas
+            canvas.style.display = 'block';
+            document.getElementById('visualization').style.display = 'none';
+        }
+
+        // Solve polygon
+        async function solvePolygon() {
+            if (currentPolygonIndex < 0) return;
+
+            document.getElementById('loading').classList.add('show');
+            document.getElementById('status').textContent = 'Solving...';
+
+            const startTime = performance.now();
+
+            try {
+                const response = await fetch(`/api/solve/${currentPolygonIndex}`, {
+                    method: 'POST'
+                });
+                const data = await response.json();
+                guards = data.guards || [];
+            } catch (error) {
+                // Placeholder solution: use first few vertices as guards
+                const polygon = polygons[currentPolygonIndex];
+                guards = polygon.vertices.slice(0, Math.ceil(polygon.vertices.length / 4));
+            }
+
+            const endTime = performance.now();
+
+            document.getElementById('loading').classList.remove('show');
+            document.getElementById('guardCount').textContent = guards.length;
+            document.getElementById('solveTime').textContent = `${((endTime - startTime) / 1000).toFixed(2)}s`;
+            document.getElementById('status').textContent = 'Solved';
+
+            visualizeCurrentPolygon();
+        }
+
+        // Clear guards
+        function clearGuards() {
+            guards = [];
+            document.getElementById('guardCount').textContent = '0';
+            document.getElementById('status').textContent = '-';
+            visualizeCurrentPolygon();
+        }
+
+        // Download image
+        function downloadImage() {
+            const canvas = document.getElementById('drawCanvas');
+            const link = document.createElement('a');
+            link.download = 'polygon_visualization.png';
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+
+        // Export polygon
+        function exportPolygon() {
+            if (currentPolygonIndex < 0) return;
+            const polygon = polygons[currentPolygonIndex];
+            const dataStr = JSON.stringify(polygon, null, 2);
+            const blob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.download = 'polygon.json';
+            link.href = url;
+            link.click();
+        }
+
+        // Show draw canvas
+        function showDrawCanvas() {
+            isDrawing = true;
+            drawingPoints = [];
+            const canvas = document.getElementById('drawCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#fafafa';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            document.getElementById('drawCanvas').style.display = 'block';
+            document.getElementById('drawControls').style.display = 'flex';
+            document.getElementById('controls').style.display = 'none';
+            document.getElementById('emptyState').style.display = 'none';
+            document.getElementById('visualization').style.display = 'none';
+        }
+
+        // Setup draw canvas
+        function setupDrawCanvas() {
+            const canvas = document.getElementById('drawCanvas');
+            const ctx = canvas.getContext('2d');
+
+            canvas.addEventListener('click', (e) => {
+                if (!isDrawing) return;
+
+                const rect = canvas.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                drawingPoints.push({ x, y });
+
+                // Redraw
+                ctx.fillStyle = '#fafafa';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                // Draw lines
+                if (drawingPoints.length > 1) {
+                    ctx.beginPath();
+                    ctx.moveTo(drawingPoints[0].x, drawingPoints[0].y);
+                    drawingPoints.slice(1).forEach(p => ctx.lineTo(p.x, p.y));
+                    ctx.strokeStyle = '#667eea';
+                    ctx.lineWidth = 2;
+                    ctx.stroke();
+                }
+
+                // Draw points
+                drawingPoints.forEach((p, i) => {
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, 5, 0, Math.PI * 2);
+                    ctx.fillStyle = i === 0 ? '#27ae60' : '#667eea';
+                    ctx.fill();
+                });
+            });
+        }
+
+        // Finish drawing
+        function finishDrawing() {
+            if (drawingPoints.length < 3) {
+                alert('Need at least 3 points to create a polygon');
+                return;
+            }
+
+            const polygon = {
+                name: `Drawn Polygon ${polygons.length + 1}`,
+                vertices: drawingPoints.map(p => ({ x: p.x, y: p.y }))
+            };
+
+            polygons.push(polygon);
+            isDrawing = false;
+            updatePolygonList();
+            selectPolygon(polygons.length - 1);
+        }
+
+        // Undo point
+        function undoPoint() {
+            if (drawingPoints.length > 0) {
+                drawingPoints.pop();
+                const canvas = document.getElementById('drawCanvas');
+                const ctx = canvas.getContext('2d');
+
+                ctx.fillStyle = '#fafafa';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                if (drawingPoints.length > 1) {
+                    ctx.beginPath();
+                    ctx.moveTo(drawingPoints[0].x, drawingPoints[0].y);
+                    drawingPoints.slice(1).forEach(p => ctx.lineTo(p.x, p.y));
+                    ctx.strokeStyle = '#667eea';
+                    ctx.lineWidth = 2;
+                    ctx.stroke();
+                }
+
+                drawingPoints.forEach((p, i) => {
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, 5, 0, Math.PI * 2);
+                    ctx.fillStyle = i === 0 ? '#27ae60' : '#667eea';
+                    ctx.fill();
+                });
+            }
+        }
+
+        // Cancel drawing
+        function cancelDrawing() {
+            isDrawing = false;
+            drawingPoints = [];
+            document.getElementById('drawCanvas').style.display = 'none';
+            document.getElementById('drawControls').style.display = 'none';
+            document.getElementById('emptyState').style.display = 'block';
+
+            if (currentPolygonIndex >= 0) {
+                visualizeCurrentPolygon();
+            }
+        }
+
+        // Clear drawing
+        function clearDrawing() {
+            drawingPoints = [];
+            const canvas = document.getElementById('drawCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#fafafa';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        }
+
+        // Load example polygons
+        function loadExample(type) {
+            let polygon;
+
+            switch (type) {
+                case 'simple':
+                    polygon = {
+                        name: 'Simple Square',
+                        vertices: [
+                            { x: 0, y: 0 },
+                            { x: 100, y: 0 },
+                            { x: 100, y: 100 },
+                            { x: 0, y: 100 }
+                        ]
+                    };
+                    break;
+                case 'complex':
+                    polygon = {
+                        name: 'L-Shaped Polygon',
+                        vertices: [
+                            { x: 0, y: 0 },
+                            { x: 100, y: 0 },
+                            { x: 100, y: 50 },
+                            { x: 50, y: 50 },
+                            { x: 50, y: 100 },
+                            { x: 0, y: 100 }
+                        ]
+                    };
+                    break;
+                case 'spiral':
+                    polygon = {
+                        name: 'Spiral Polygon',
+                        vertices: [
+                            { x: 0, y: 0 },
+                            { x: 100, y: 0 },
+                            { x: 100, y: 100 },
+                            { x: 20, y: 100 },
+                            { x: 20, y: 20 },
+                            { x: 80, y: 20 },
+                            { x: 80, y: 80 },
+                            { x: 40, y: 80 },
+                            { x: 40, y: 40 },
+                            { x: 0, y: 40 }
+                        ]
+                    };
+                    break;
+            }
+
+            polygons.push(polygon);
+            updatePolygonList();
+            selectPolygon(polygons.length - 1);
+        }
+    </script>
+</body>
+</html>

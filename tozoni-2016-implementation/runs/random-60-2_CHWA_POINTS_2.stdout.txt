@@ -1,0 +1,61 @@
+[ArtGallerySolver] --Initiating Iterative Solution--
+[ArtGallerySolver] Instance: ../instances/final/random-60-2.pol
+[ArtGallerySolver] Parameters: 
+[ArtGallerySolver] == Witness Set Option: CHWA_POINTS
+[ArtGallerySolver] == Solver Mode Option: 2
+
+[ArtGallerySolver] Selecting initial discretization...
+[ArtGallerySolver] Initiating Loop...
+
+[ArtGallerySolver] Initiating iteration 1
+[ArtGallerySolver] Inserting new witnesses...
+[ArtGallerySolver] Selecting guards...
+[ArtGallerySolver] Initiating solver...
+[ArtGallerySolver] Running solver...
+[PreSolver] Started with 125 candidates and finished with 35
+[PreSolver] Started with 39 constraints and finished with 16
+GLPK Simplex Optimizer 5.0
+16 rows, 35 columns, 67 non-zeros
+      0: obj =   0.000000000e+00 inf =   1.600e+01 (16)
+      8: obj =   8.000000000e+00 inf =   0.000e+00 (0)
+*    17: obj =   8.000000000e+00 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+16 rows, 35 columns, 67 non-zeros
+35 integer variables, all of which are binary
+Integer optimization begins...
+Long-step dual simplex will be used
++    17: mip =     not found yet >=              -inf        (1; 0)
++    17: >>>>>   8.000000000e+00 >=   8.000000000e+00   0.0% (1; 0)
++    17: mip =   8.000000000e+00 >=     tree is empty   0.0% (0; 1)
+INTEGER OPTIMAL SOLUTION FOUND
+[SolverPLIGlpk] Result: 8
+[ArtGallerySolver] Area miss: 1.62778
+[ArtGallerySolver] # of uncovered regions: 3
+[ArtGallerySolver] 3 new witnesses were chosen...
+[PreSolver] Started with 125 candidates and finished with 37
+[PreSolver] Started with 42 constraints and finished with 16
+GLPK Simplex Optimizer 5.0
+16 rows, 37 columns, 70 non-zeros
+      0: obj =   0.000000000e+00 inf =   1.600e+01 (16)
+      9: obj =   9.000000000e+00 inf =   0.000e+00 (0)
+*    23: obj =   8.000000000e+00 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+GLPK Integer Optimizer 5.0
+16 rows, 37 columns, 70 non-zeros
+37 integer variables, all of which are binary
+Integer optimization begins...
+Long-step dual simplex will be used
++    23: mip =     not found yet >=              -inf        (1; 0)
++    23: >>>>>   8.000000000e+00 >=   8.000000000e+00   0.0% (1; 0)
+[SolverPLIGlpk] GLPK found best solution possible
++    23: mip =   8.000000000e+00 >=   8.000000000e+00   0.0% (1; 0)
+SEARCH TERMINATED BY APPLICATION
+[SolverPLIGlpk] Result: 8
+[ArtGallerySolver] Area miss: 0
+[ArtGallerySolver] Comparing upper bound with lower bound...
+[ArtGallerySolver] Lower Bound: 8
+[ArtGallerySolver] Upper Bound: 8
+[ArtGallerySolver] Found optimal solution!!
+[ArtGallerySolver] CPU time: 0.362129 secs.
+[ArtGallerySolver] --Finalizing Iterative Solution--

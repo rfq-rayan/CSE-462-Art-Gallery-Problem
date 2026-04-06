@@ -1,0 +1,2 @@
+idFile polSize LB UB iterations initWitnSize finalWitnSize initCandSize finalCandSize maxHorizontal IPSolved initDisTime insertDisTime selectCandTime initSolverTime solverTime scpResolTime newDisTime totalTime
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/instances/final/gD_ortho-ortho_20:100v-10h_23.pol 100 9 10 2 100 119 1247 1695 6 8 4.6e-05 0.819541 0.847966 0.695499 0.744018 0.030311 0.008769 3.11629

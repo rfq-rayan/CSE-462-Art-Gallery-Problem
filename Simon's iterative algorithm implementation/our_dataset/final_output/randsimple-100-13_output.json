@@ -1,0 +1,17 @@
+{
+  "guards": [],
+  "iterations": 0,
+  "mode": "iterative",
+  "num_guards": 0,
+  "solve_time_seconds": 0.002,
+  "statistics": {
+    "final_candidates": 14,
+    "final_granularity_k": -1527105904,
+    "final_witnesses": 140096007919112,
+    "granularity_updates": 0,
+    "ip_time": 0.0,
+    "split_time": 0.0,
+    "visibility_time": 0.0
+  },
+  "status": "suboptimal"
+}

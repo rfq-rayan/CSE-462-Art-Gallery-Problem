@@ -1,0 +1,5 @@
+instance: random-40-14
+wall_clock_seconds: 36.666160
+solve_time_seconds: 36.664
+status: optimal
+returncode: 0

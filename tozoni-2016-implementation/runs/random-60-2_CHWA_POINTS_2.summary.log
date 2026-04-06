@@ -1,0 +1,2 @@
+idFile polSize guards iterations initWitnSize finalWitnSize initCandSize finalCandSize maxHorizontal IPSolved initDisTime insertDisTime selectCandTime initSolverTime solverTime scpResolTime newDisTime totalTime
+../instances/final/random-60-2.pol 60 8 1 39 39 125 125 2 2 0.000168 0.06787 0.035174 0.167712 0.090151 0.001783 0 0.362129

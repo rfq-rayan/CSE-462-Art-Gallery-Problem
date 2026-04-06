@@ -1,0 +1,2 @@
+idFile polSize guards iterations initWitnSize finalWitnSize initCandSize finalCandSize maxHorizontal IPSolved initDisTime insertDisTime selectCandTime initSolverTime solverTime scpResolTime newDisTime totalTime
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/instances/final/randvon-40-7.pol 40 4 1 40 40 72 72 3 3 1.6e-05 0.014214 0.015363 0.005751 0.009953 0.000738 0 0.045557

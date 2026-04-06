@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AGSol — polygon visualization</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+    textarea { width: 100%; min-height: 120px; font-family: monospace; font-size: 12px; }
+    img { max-width: 100%; border: 1px solid #ccc; }
+    .row { margin: 1rem 0; }
+    button { padding: 0.4rem 0.8rem; cursor: pointer; }
+    .err { color: #a00; }
+    code { background: #f4f4f4; padding: 2px 6px; }
+  </style>
+</head>
+<body>
+  <h1>AGSol instance viewer</h1>
+  <p>Paste a one-line <code>.pol</code> file (see README §4.a) or use the CLI below. Optional <code>.sol</code> (§4.c).</p>
+  <p>Default solver path: <code>{{ solver_default }}</code> — set <code>AGSOLVER</code> to override.</p>
+
+  <div class="row">
+    <label><strong>.pol contents (one line)</strong></label>
+    <textarea id="pol" placeholder="100 48/1 46/1 ..."></textarea>
+  </div>
+  <div class="row">
+    <label><strong>.sol contents (optional, two lines)</strong></label>
+    <textarea id="sol" placeholder="/path/to/instance.pol&#10;3 x1 y1 x2 y2 x3 y3"></textarea>
+  </div>
+  <div class="row">
+    <button type="button" id="btn">Render</button>
+  </div>
+  <p id="msg" class="err"></p>
+  <div class="row">
+    <img id="out" alt="preview" style="display:none;" />
+  </div>
+
+  <h2>CLI</h2>
+  <pre><code># from repository root (966/)
+python3 -m venv tozoni_venv
+tozoni_venv/bin/pip install -r tozoni-2016-implementation/visualization/requirements.txt
+tozoni_venv/bin/python tozoni-2016-implementation/visualization/agp_viz_app.py /path/to/instance.pol -o out.png
+# or: visualization/run_viz.sh /path/to/instance.pol -o out.png
+# web UI (no args)
+tozoni_venv/bin/python tozoni-2016-implementation/visualization/agp_viz_app.py
+</code></pre>
+
+  <script>
+    document.getElementById('btn').onclick = async () => {
+      const msg = document.getElementById('msg');
+      const img = document.getElementById('out');
+      msg.textContent = '';
+      img.style.display = 'none';
+      const pol_text = document.getElementById('pol').value.trim();
+      const sol_text = document.getElementById('sol').value.trim();
+      if (!pol_text) { msg.textContent = 'Paste .pol data first.'; return; }
+      try {
+        const body = { pol_text };
+        if (sol_text) body.sol_text = sol_text;
+        const r = await fetch('/api/visualize', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body),
+        });
+        const j = await r.json();
+        if (!r.ok) throw new Error(j.error || r.statusText);
+        img.src = 'data:image/png;base64,' + j.image;
+        img.style.display = 'block';
+        msg.textContent = (typeof j.guard_count === 'number') ? ('Guards: ' + j.guard_count) : '';
+      } catch (e) {
+        msg.textContent = String(e);
+      }
+    };
+  </script>
+</body>
+</html>

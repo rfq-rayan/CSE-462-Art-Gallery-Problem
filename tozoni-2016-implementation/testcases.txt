@@ -1,0 +1,22 @@
+agp2009a-orthorand (600 files)
+20 vertex-count classes N ∈ {20, 40, 60, 80, 100, 200, 300, …, 2500} (same list as before).
+30 random instances per class (second number in the name).
+Pattern: random-<N>-<id>.pol → 20 × 30 = 600.
+
+
+agp2009a-simplerand (600 files)
+Same structure as orthorand: 20 sizes × 30 ids.
+Pattern: randsimple-<N>-<id>.pol → 600.
+
+agp2009a-rvk (480 files)
+16 sizes × 30 ids (sizes stop at 1500, no 1750–2500).
+Pattern: randvon-<N>-<id>.pol → 16 × 30 = 480.
+
+gB-simple-simple (300 files)
+10 different grid/geometry settings (the …_<min>:<max>v-<h>h part in the name, e.g. 25:100v-10h, …, 250:1000v-100h).
+30 numbered instances per setting (_1.pol … _30.pol).
+Pattern: gB_simple-simple_<spec>_<k>.pol → 10 × 30 = 300.
+
+gD-ortho-ortho (300 files)
+Same idea as gB: 10 geometry specs × 30 instances each.
+Pattern: gD_ortho-ortho_<spec>_<k>.pol → 300.

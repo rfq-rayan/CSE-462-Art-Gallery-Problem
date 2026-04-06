@@ -1,0 +1,5 @@
+instance: gB_simple-simple_25:100v-10h_29
+wall_clock_seconds: 34.707357
+solve_time_seconds: 34.704
+status: optimal
+returncode: 0

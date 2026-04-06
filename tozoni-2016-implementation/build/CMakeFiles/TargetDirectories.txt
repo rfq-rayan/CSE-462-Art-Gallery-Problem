@@ -1,0 +1,17 @@
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/build/CMakeFiles/PolygonExt.dir
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/build/CMakeFiles/PolygonWithHolesExt.dir
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/build/CMakeFiles/polAlgorithms.dir
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/build/CMakeFiles/IGrid.dir
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/build/CMakeFiles/AVPLightGrid.dir
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/build/CMakeFiles/Lagrangian.dir
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/build/CMakeFiles/SolverPLIGlpk.dir
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/build/CMakeFiles/PreSolver.dir
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/build/CMakeFiles/artGallerySolver.dir
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/build/CMakeFiles/test_arrangement_smoke.dir
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/build/CMakeFiles/test.dir
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/build/CMakeFiles/edit_cache.dir
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/build/CMakeFiles/rebuild_cache.dir
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/build/CMakeFiles/list_install_components.dir
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/build/CMakeFiles/install.dir
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/build/CMakeFiles/install/local.dir
+/run/media/abd-faiyaz/Files/tozoni-2016-implementation/build/CMakeFiles/install/strip.dir
